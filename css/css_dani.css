@@ -1,7 +1,7 @@
 /* estos son mis estilos_DNGEA */
 
 body {
-    background-size: 10%
+    background-size: 100%
     margin: 40px 0;
 }
 
@@ -85,7 +85,7 @@ a:link {
 
 .proyecto {
     margin-top: 1%;
-    padding 10% 0% 10% 0%;
+    padding: 10% 0% 10% 0%;
 }
 
 .historia-left{
