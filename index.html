@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <!---- Parallax Dept Cards based on https://codepen.io/andymerskin/pen/XNMWvQ/ ---> 
+    
+  <title>Introspección de un RoBOT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'>
+    <link rel="stylesheet" href="./style.css">  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 class="title">Portfolio dngea</h1>
+
+<div id="app" class="container">
+    
+    <a href="./fotografia.html">
+    <card data-image="img/dc.jpg">
+    <h1 slot="header">Fotografía</h1>
+    <p slot="content">Proyectos, ensayos y errores.</p>
+    </card>
+    </a>
+    
+  <card data-image="img/robot.jpg">
+    <h1 slot="header">VFX</h1>
+    <p slot="content">3D y Animaciones.</p>
+  </card>
+    
+  <card data-image="img/pdi.png">
+    <h1 slot="header">Audiovisual</h1>
+    <p slot="content">Montajes, cortometrajes y videos.</p>
+  </card>
+    
+  <card data-image="">
+    <h1 slot="header">Viajar</h1>
+    <p slot="content">...</p>
+  </card>
+    
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./script.js"></script>
+
+    <footer> Instagram: @dnpgzl_ </footer>
+    
+    
+</body>
+</html>
