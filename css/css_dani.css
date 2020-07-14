@@ -1,0 +1,80 @@
+/* estos son mis estilos_DNGEA */
+
+body {
+    background-size: 10%
+    margin: 40px 0;
+}
+
+/*#BCAAA4*/
+
+.titulo {
+  font-family: "Liberation Mono";
+  font-size: 30px;
+  font-weight: 700;
+  color: hsla(110, 20%, 10%, 1);
+  text-align: center;}
+
+
+p {line-height: 1.5em;
+    font-family: Liberation Serif} 
+.p {
+    font-size:30px; 
+    font-weight:bold;
+    color:hsl(120, 0%, 10%);
+    margin-left: 20px;
+    color:lightgrey;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    }
+
+a:link{ 
+    text-decoration: none;
+}
+
+
+h1 + p, p + p {
+  margin-top: 10px;
+}
+
+a:link {
+  color: red;}
+
+.header {
+    display: flex;
+    float: right;
+    margin-bottom: 5%;
+}
+
+.right-header {
+    margin-top: 7%;
+    margin-right: 200px;
+    border-left: 8px solid black;
+    padding-left: 37px;
+}
+
+.discurso {
+    text-align: right;
+    border-width: 8px;
+    border-style: hidden solid hidden hidden;
+    border-color: rgba(30, 30, 30, 0.9);
+    padding-right: 40px;   
+    letter-spacing: 0.8px;
+}
+
+
+
+.container {
+    justify-content: center;
+    display: flex;
+}
+
+.container .card{
+    margin: 50px;
+    padding: 60px 40px;
+    border-width: 1px 1px 1px 7px;
+    border-style:  solid;
+    border-color:black;
+    border-radius: 12px;
+}
+
+
+
