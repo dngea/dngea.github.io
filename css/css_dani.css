@@ -9,6 +9,19 @@ body {
 
 /*#BCAAA4*/
 
+footer {
+  position: fixed;
+  bottom: 2px;
+  width:  100%;
+  padding: 10px;
+  padding-left: 30px;
+  opacity: 0.5;
+  background-color: #2d2d2d;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10;
+   color: azure;
+}
+
 .titulo {
   font-family: "Liberation Mono";
   font-size: 30px;
@@ -112,7 +125,7 @@ a:link {
 .historia-right{
     display: inline-block;
     float: left; 
-    margin-left: 8%;
+    margin-left: 7%;
     padding: 0% 0%;
 }
 
@@ -122,6 +135,7 @@ a:link {
     padding: 0px 10px 0px 10px;
     font-style: italic;
     font-weight: 550;
+    font-size: 1.3vw;
 }
 
 .responsive-place {
