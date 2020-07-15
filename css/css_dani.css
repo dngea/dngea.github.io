@@ -1,7 +1,10 @@
 /* estos son mis estilos_DNGEA */
 
 body {
-    background-size: 10%
+    background-image: url(../img/rusticpapes.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-size: 100%
     margin: 40px 0;
 }
 
@@ -15,7 +18,7 @@ body {
   text-align: center;}
 
 
-p {line-height: 1.5em;
+p {line-height: 1.4em;
     font-family: Liberation Serif} 
 .p {
     font-size:30px; 
@@ -39,35 +42,45 @@ a:link {
   color: red;}
 
 .header {
-    display: flex;
-    float: right;
-    margin-bottom: 5%;
+    margin: 1%;
+    
 }
 
-.right-header {
+.left-header {
     margin-top: 7%;
-    margin-right: 200px;
+    display: inline-block;
+    overflow: auto;
+    float: left;
     border-left: 8px solid black;
     padding-left: 37px;
 }
 
 .discurso {
+    display: inline-block;
+    overflow: auto;
+    float: right;
     text-align: right;
     border-width: 8px;
-    border-style: hidden solid hidden hidden;
+    border-right-style: solid;
     border-color: rgba(30, 30, 30, 0.9);
     padding-right: 40px;   
-    letter-spacing: 0.8px;
+    letter-spacing: 0.7px;
+    font-size: 1.5vw;
 }
-
 
 
 .container {
-    justify-content: center;
+    margin: 3% 8%;
+    display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
 
 .container .card{
+    display: inline-block;
+    float: left;
     margin: 50px;
     padding: 60px 40px;
     border-width: 1px 1px 1px 10px;
@@ -82,10 +95,9 @@ a:link {
     box-shadow: 10px 10px 20px 0 rgba(0,0,0,1);
 }
 
-
 .proyecto {
     margin-top: 1%;
-    padding 10% 0% 10% 0%;
+    padding 0% 0% 0% 0%;
 }
 
 .historia-left{
@@ -97,15 +109,23 @@ a:link {
 
 .historia-right{
     display: inline-block;
-    float: right;
-    margin-right: 2%;
-    padding-right: 0%;
+    float: left; 
+    margin-left: 8%;
+    padding: 0% 0%;
 }
 
 
 .pie-foto {
     display: inline-block;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
     font-style: italic;
     font-weight: 550;
+}
+
+.responsive-place {
+    max-width: 48%;
+}
+
+.responsive-obj {
+    max-width: 32%;
 }
