@@ -7,7 +7,7 @@ body {
 
     /** Añadido fondo */ 
     background-image: url(img/rusticpapes.jpg);
-    background-size: 100%;
+    background-size: cover;
   -webkit-font-smoothing: antialiased;
 }
 

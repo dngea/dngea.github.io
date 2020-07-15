@@ -2,10 +2,9 @@
 
 body {
     background-image: url(../img/rusticpapes.jpg);
-    background-size: cover; 
     background-repeat: no-repeat;
-    background-size: 100%
-    margin: 40px 0;
+    background-size: cover;
+   
 }
 
 /*#BCAAA4*/
@@ -19,8 +18,10 @@ body {
 
 
 p {line-height: 1.4em;
-    font-family: Liberation Serif} 
-.p {
+    font-family: Liberation serif;
+}
+
+.present-proyects {
     font-size:30px; 
     font-weight:bold;
     color:hsl(120, 0%, 10%);
@@ -39,7 +40,8 @@ h1 + p, p + p {
 }
 
 a:link {
-  color: red;}
+  color: red;
+}
 
 .header {
     margin: 1%;
