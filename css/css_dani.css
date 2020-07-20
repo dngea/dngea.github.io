@@ -90,15 +90,19 @@ a:link {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     -webkit-box-pack: center;
     justify-content: center;
 }
 
 .container .card{
+    -webkit-box-flex: 0;
     display: inline-block;
-    float: left;
-    margin: 0% 4% 5% 4%;
-    padding: 6% 5%;
+    flex: 0 20px 250px;
+    position: relative;
+    overflow: hidden;
+    margin: 0% 4% 6% 4%;
+    padding: 7.5% 5%;
     border-width: 1px 1px 1px 11px;
     border-style:  solid;
     border-color:black;
@@ -153,6 +157,6 @@ a:link {
 }
 
 .proyecto .historia-right img{
-box-shadow: -2px 4px 8px rgba(0,0,0,1);
+box-shadow: -2px 4px 6px rgba(0,0,0,1);
     margin-right: 0.5%;
 }

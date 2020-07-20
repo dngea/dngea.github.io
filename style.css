@@ -57,7 +57,7 @@ h1 + p, p + p {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: center;
-          justify-content: center;
+    justify-content: center;
 }
 
 .card-wrap {
