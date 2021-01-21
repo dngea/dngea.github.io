@@ -3,11 +3,11 @@ body {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
-  background-color: #BCAAA4;
+  background-color: rgb(220,220,220);
 
     /** Añadido fondo */ 
-    background-image: url(img/rusticpapes.jpg);
-    background-size: cover;
+    ,background-image: url(img/rusticpapes.jpg);
+    ,background-size: cover;
   -webkit-font-smoothing: antialiased;
 }
 

@@ -2,7 +2,7 @@
 
 body {
     margin: 40px 0;
-    background-image: url(../img/rusticpapes.jpg);
+    .background-image: url(../img/rusticpapes.jpg);
     background-size: cover;
    -webkit-font-smoothing: antialiased;
     font-family: "Raleway";
@@ -26,9 +26,10 @@ footer {
   font-family: "Raleway";
   font-size: 250%;
   font-weight: 700;
-  color: hsla(110, 20%, 10%, 1);
+  color: rgb(210,210,210);
   text-align: center;
-    margin: 4%;
+    margin: 5%;
+    padding: 2%;
 }
 
 
@@ -41,7 +42,7 @@ p {line-height: 1.4em;
     font-size:20px; 
     font-style: italic;
     text-align: right;
-    color: hsl(10, 20%, 90%);
+    color: rgb(210,210,210);
     text-shadow: 0.09em 0.08em 0.08em black;
     position: absolute;
     right: 0;
@@ -88,6 +89,8 @@ a:link {
     padding-right: 3%;   
     letter-spacing: 0.7px;
     font-size: 1.5vw;
+    color: rgb(180,180,180);
+    font-weight: 100;
 }
 
 
@@ -175,8 +178,9 @@ a:link {
     display: inline-block;
     padding: 0px 10px 0px 10px;
     font-style: italic;
-    font-weight: 550;
+    font-weight:100;
     font-size: 1.3vw;
+    color: rgb(230,230,230);
 }
 
 .responsive-place {
