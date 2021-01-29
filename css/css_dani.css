@@ -1,7 +1,6 @@
 /* estos son mis estilos_DNGEA */
 
 body{ 
-   -webkit-font-smoothing: antialiased;
     font-family: "Raleway";
 }
 
@@ -19,19 +18,8 @@ footer {
    color: azure;
 }
 
-
-
-p {line-height: 1.4em;
-    font-family: "Raleway";
-}
-
 a:link{ 
     text-decoration: none;
-}
-
-
-h1 + p, p + p {
-  margin-top: 10px;
 }
 
 a:link {
@@ -106,7 +94,7 @@ img{
 
 
 @media screen and (max-width: 800px) {
-    .container{
+    .grid{
         flex-direction: column;
     }
     
@@ -114,142 +102,5 @@ img{
         width: 60%;
         height: auto;
     }
-}
-
-/*QUIEN HABLA DE TI*/
-
-.contenedor-qh{
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    max-width: 1800px;
-}
-
-.header {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    border: 3px solid white;
-}
-
-.right-header {
-    width: 40%;
-    display: block;
-    flex-wrap: wrap;
-    overflow:auto;
-    float: right;
-}
-
-.discurso {
-    width: 60%;
-    display: block;
-    flex-wrap: wrap;
-    text-align: justify;
-    letter-spacing: 0.8px;
-    font-size: 16px;
-    color: rgb(200,200,200);
-    font-weight: 100;
-    font-family: "Raleway";
-}
-
-.titulo-qh {
-    font-family: "Raleway";
-    font-size: 250%;
-    font-weight: 700;
-    color: rgb(230,230,230);
-    text-align: right;
-}
-
-.proyecto {
-    width: 95%;
-    margin: auto;
-    padding: 2% 0 2% 0;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(20,20,20);
-}
-
-.proyecto .historia-left{
-    display: block;
-    float: left;
-}
-
-proyecto .historia-right{
-    display: inline-block;
-    float: right;
-    
-}
-
-.pie-foto-r{
-    display: block;
-    float: right;
-    width: 11%;
-    padding: 10px;
-    position: relative;
-    font-family: "Raleway";
-    font-style: italic;
-    font-weight:100;
-    font-size: 1.3vw;
-    color: rgb(230,230,230);
-}
-
-.pie-foto-l{
-    display: block;
-    float: left;
-    width: 11%;
-    padding: 10px;
-    position: relative;
-    font-family: "Raleway";
-    font-style: italic;
-    font-weight:100;
-    font-size: 1.3vw;
-    color: rgb(230,230,230);
-}
-
-.responsive-place {
-    max-width: 48%;
-}
-
-.responsive-obj {
-    max-width: 32%;
-}
-
-.proyecto .historia-left img{
-    box-shadow: 2px 4px 8px rgba(0,0,0,1);
-    padding: 10px;
-}
-
-.proyecto .historia-right img{
-    box-shadow: -2px 4px 6px rgba(0,0,0, 0.1);
-    display: block;
-    float: right;
-    height: auto;
-    padding: 10px;
-}
-
-.center {
-    text-align: center;
-}
-
-.video-final {
-    display: inline-block;
-    border-top: 4px solid rgba(230,230,230, 0.7);
-    margin: 6%;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 2%;
-}
-
-.video-final p {
-    display: inline-block; 
-    text-align: center; 
-    font-size: 20px;
-   padding: 2%;
-    color: rgb(230,230,230)
-}
-
-.video-final iframe {
-    display: inline-block;
 }
  

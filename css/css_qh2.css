@@ -45,7 +45,7 @@ body {
 
 .texto-presentacion{
     color: rgb(190,190,190);
-    font-size: 14px;
+    font-size: 15px;
     text-align: justify;
     width: 50%;
     padding: 20px;
@@ -105,13 +105,13 @@ img{
 .footer .texto-fin{
     text-align: center;
     color: rgb(230,230,230);
-    font-size: 2vw;
+    font-size: 18px;
 }
 .footer .video-final{
     display: flex;
     justify-content:center;
     padding: 2%;
-    width: 40%;
+    width: 50%;
 }
 
 .footer .video-final iframe{
@@ -137,6 +137,7 @@ img{
     }
     .texto-presentacion{
         width: 100%;
+        font-size: 14px;
     }
     
     .img1{
