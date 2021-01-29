@@ -3,11 +3,11 @@ body {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
-  background-color: #BCAAA4;
+  background-color: rgb(220,220,220);
 
     /** Añadido fondo */ 
-    background-image: url(img/rusticpapes.jpg);
-    background-size: cover;
+    ,background-image: url(img/rusticpapes.jpg);
+    ,background-size: cover;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -17,30 +17,34 @@ a:link {
 }
 
 footer {
-  position: fixed;
-  bottom: 2px;
-  width:  100%;
-  padding: 10px;
-  padding-left: 30px;
-    
-  opacity: 0.5;
-  background-color: #2d2d2d;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 10;
-   color: azure;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+footer .socialmedia{
+    padding: 8px;
+}
+
+footer .socialmedia a:hover{
+    opacity: 0.5;
 }
 
 
+
 .title {
-  font-family: "Raleway";
-  font-size: 300%;
+  font-family: "Liberation Mono";
+  font-size: 30px;
   font-weight: 700;
   color: hsla(110, 20%, 10%, 1);
   text-align: center;
 }
 
-p {line-height: 1.4em;
-    font-family: "Raleway"}
+p {line-height: 1.5em;
+    font-family: Liberation Serif}
 .p {
     font-size:20px; 
     font-weight:bold;

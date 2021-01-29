@@ -1,9 +1,6 @@
 /* estos son mis estilos_DNGEA */
 
-body {
-    margin: 40px 0;
-    .background-image: url(../img/rusticpapes.jpg);
-    background-size: cover;
+body{ 
    -webkit-font-smoothing: antialiased;
     font-family: "Raleway";
 }
@@ -11,8 +8,8 @@ body {
 /*#BCAAA4*/
 
 footer {
-  position: fixed;
-  bottom: 2px;
+    position: fixed;
+  bottom: 0px;
   width:  100%;
   padding: 10px;
   padding-left: 30px;
@@ -22,33 +19,10 @@ footer {
    color: azure;
 }
 
-.titulo {
-  font-family: "Raleway";
-  font-size: 250%;
-  font-weight: 700;
-  color: rgb(210,210,210);
-  text-align: center;
-    margin: 5%;
-    padding: 2%;
-}
 
 
 p {line-height: 1.4em;
     font-family: "Raleway";
-}
-
-.present-proyects {
-    display: inline;
-    font-size:20px; 
-    font-style: italic;
-    text-align: right;
-    color: rgb(210,210,210);
-    text-shadow: 0.09em 0.08em 0.08em black;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 8px 15px;
-    background-color: hsla(10, 0%, 10%, 0.25);
 }
 
 a:link{ 
@@ -64,120 +38,169 @@ a:link {
   color: red;
 }
 
-.header {
-    margin: 1%;
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+.grid {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190,190,190);
+    border-right: 5px solid rgb(30,30,30);
+}
+
+.titulo {
+  font-family: "liberation mono";
+  font-size: 250%;
+  font-weight: 600;
+  color: rgb(30,30,30);
+  text-align: center;
+    margin: 30px auto;
+    padding: 2%;
+    width: 50%;
     
 }
 
-.left-header {
-    margin-top: 7%;
-    display: inline-block;
-    overflow: auto;
-    float: left;
-    border-left: 8px solid black;
-    padding-left: 2%;
+.item{
+    width: 30%;
+    height: 20%;
+    position: relative;
+    margin: 2% 4%;
+    box-shadow : rgba(0, 0, 0, 0.66) 5px 5px 10px;
+    -webkit-transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    opacity: 0.8;
+    border:5px solid rgb(30,30,30);
+    border-radius: 10px;
+}
+.item:hover{
+    box-shadow: 10px 10px 15px rgba(0,0,0,1);
+    opacity: 1;
+}
+
+img{
+    object-fit:cover;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.present-proyects {
+    font-size:20px; 
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Raleway";
+    text-align: right;
+    padding: 2% 6%;
+    color: rgb(230,230,230);
+    text-shadow: 0.05em 0.05em 0.04em black;
+    background-color: rgba(40,40,40, 0.3);
+    position: absolute;
+    right: 5%;
+    bottom:5%   
+}
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    .item{
+        width: 60%;
+        height: auto;
+    }
+}
+
+/*QUIEN HABLA DE TI*/
+
+.contenedor-qh{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 1800px;
+}
+
+.header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid white;
+}
+
+.right-header {
+    width: 40%;
+    display: block;
+    flex-wrap: wrap;
+    overflow:auto;
+    float: right;
 }
 
 .discurso {
-    display: inline-block;
-    overflow: auto;
-    float: right;
-    text-align: right;
-    border-width: 8px;
-    border-right-style: solid;
-    border-color: rgba(30, 30, 30, 0.9);
-    padding-right: 3%;   
-    letter-spacing: 0.7px;
-    font-size: 1.5vw;
-    color: rgb(180,180,180);
-    font-weight: 100;
-}
-
-
-.container {
-    width: 80%;
-    margin: 40px 80px;
-    display: -webkit-box;
-    display: flex;
+    width: 60%;
+    display: block;
     flex-wrap: wrap;
-    overflow: hidden;
-    -webkit-box-pack: center;
-    justify-content: center;
+    text-align: justify;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    color: rgb(200,200,200);
+    font-weight: 100;
+    font-family: "Raleway";
 }
 
-.card {
-  position: relative;
-  -webkit-box-flex: 0;
-    flex: 0 0 290px;
-  width: 300px;
-  height: 300px;
-  background-color: #333;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow : rgba(0, 0, 0, 0.66) 0 1px 10px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-  -webkit-transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    margin: 0px 30px 30px 30px;
-}
-
-.card-bg {
-  opacity: 0.5;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  pointer-events: none;
-}
-
-.container .bloque{
-    -webkit-box-flex: 0;
-    display: inline-block;
-    flex: 0 20px 250px;
-    position: relative;
-    overflow: hidden;
-    margin: 0% 4% 6% 4%;
-    padding: 7.5% 5%;
-    border-width: 1px 1px 1px 11px;
-    border-style:  solid;
-    border-color:black;
-    border-radius: 12px;
-    box-shadow: 6px 6px 14px 0 rgba(0,0,0,1);
-    transition: 0.2s;
-}
-
-.container .card:hover {
-    box-shadow: 10px 10px 20px 0 rgba(0,0,0,1);
+.titulo-qh {
+    font-family: "Raleway";
+    font-size: 250%;
+    font-weight: 700;
+    color: rgb(230,230,230);
+    text-align: right;
 }
 
 .proyecto {
-    margin-top: 1%;
-    padding: 10% 0% 10% 0%;
+    width: 95%;
+    margin: auto;
+    padding: 2% 0 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(20,20,20);
 }
 
-.historia-left{
-    display: inline-block;
+.proyecto .historia-left{
+    display: block;
     float: left;
-    padding: 2.5% 0%;
-    margin-left: 2%; 
 }
 
-.historia-right{
+proyecto .historia-right{
     display: inline-block;
-    float: left; 
-    margin-left: 7%;
-    padding: 0% 0%;
+    float: right;
+    
 }
 
+.pie-foto-r{
+    display: block;
+    float: right;
+    width: 11%;
+    padding: 10px;
+    position: relative;
+    font-family: "Raleway";
+    font-style: italic;
+    font-weight:100;
+    font-size: 1.3vw;
+    color: rgb(230,230,230);
+}
 
-.pie-foto {
-    display: inline-block;
-    padding: 0px 10px 0px 10px;
+.pie-foto-l{
+    display: block;
+    float: left;
+    width: 11%;
+    padding: 10px;
+    position: relative;
+    font-family: "Raleway";
     font-style: italic;
     font-weight:100;
     font-size: 1.3vw;
@@ -194,12 +217,15 @@ a:link {
 
 .proyecto .historia-left img{
     box-shadow: 2px 4px 8px rgba(0,0,0,1);
-    margin-left: 0.5%;
+    padding: 10px;
 }
 
 .proyecto .historia-right img{
-box-shadow: -2px 4px 6px rgba(0,0,0,1);
-    margin-right: 0.5%;
+    box-shadow: -2px 4px 6px rgba(0,0,0, 0.1);
+    display: block;
+    float: right;
+    height: auto;
+    padding: 10px;
 }
 
 .center {
