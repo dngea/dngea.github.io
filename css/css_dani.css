@@ -6,6 +6,20 @@ body{
 
 /*#BCAAA4*/
 
+.titulo {
+  font-family: "liberation mono";
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(30,30,30);
+  text-align: center;
+    margin: 30px auto;
+    padding: 2%;
+    width: 60%;
+    background-color: rgb(195,195,195);
+    border-radius: 4px;
+    border-left: 4px solid rgb(30,30,30);
+
+}
 footer {
     position: fixed;
   bottom: 0px;
@@ -18,12 +32,10 @@ footer {
    color: azure;
 }
 
+
+
 a:link{ 
     text-decoration: none;
-}
-
-a:link {
-  color: red;
 }
 
 .contenedor{
@@ -34,6 +46,7 @@ a:link {
 .grid {
     width: 80%;
     margin: 30px auto;
+    padding: 10px;
     border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
@@ -43,64 +56,78 @@ a:link {
     border-right: 5px solid rgb(30,30,30);
 }
 
-.titulo {
-  font-family: "liberation mono";
-  font-size: 250%;
-  font-weight: 600;
-  color: rgb(30,30,30);
-  text-align: center;
-    margin: 30px auto;
-    padding: 2%;
-    width: 50%;
-    
-}
-
-.item{
-    width: 30%;
+.item{ 
+    width: 25%;
     height: 20%;
+    margin: 15px;
     position: relative;
-    margin: 2% 4%;
-    box-shadow : rgba(0, 0, 0, 0.66) 5px 5px 10px;
+    box-shadow : rgba(0, 0, 0, 0.66) 3px 3px 8px;
     -webkit-transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    opacity: 0.8;
-    border:5px solid rgb(30,30,30);
-    border-radius: 10px;
+    filter: grayscale(.5);
+    border:2px solid rgba(30,30,30, .8);
+    border-radius: 4px;
+    filter: brightness(.85);
 }
 .item:hover{
-    box-shadow: 10px 10px 15px rgba(0,0,0,1);
-    opacity: 1;
+    box-shadow: 6px 6px 15px rgba(0,0,0,1);
+    filter: brightness(1.02);
 }
 
-img{
-    object-fit:cover;
+.item img{
     width: 100%;
-    border-radius: 0px;
+    border-radius: 2px;
 }
 
 .present-proyects {
-    font-size:20px; 
+    padding: 2%;
+    color: rgb(230,230,230);
+    text-shadow: 0.05em 0.05em 0.04em black;
+    background-color: rgba(40,40,40, 0.3);  
+    transition: 0.3s;
+}
+
+.item:hover .present-proyects{
+    background-color: rgba(30,30,30, 0.8); 
+}
+
+.present-proyects .nombre{
+    font-size:16px; 
     font-weight: 500;
     font-style: italic;
     font-family: "Raleway";
-    text-align: right;
-    padding: 2% 6%;
-    color: rgb(230,230,230);
-    text-shadow: 0.05em 0.05em 0.04em black;
-    background-color: rgba(40,40,40, 0.3);
-    position: absolute;
-    right: 5%;
-    bottom:5%   
+    text-align: center;
+}
+.present-proyects .ano{
+    font-size:14px; 
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Raleway";
+    text-align: center;
 }
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 700px) {
     .grid{
         flex-direction: column;
     }
     
     .item{
-        width: 60%;
-        height: auto;
+        width: 50%;
+        height: 50%;
     }
+    .item img{
+        height: 100%;
+    }
+    
+    .titulo{
+    font-size: 25px;
+    width: 80%;
+    background-color: rgb(195,195,195);
+    border-radius: 4px;
+    border-left: 4px solid rgb(30,30,30);
+    padding: 10px 5px;
+    }
+    
 }
  
