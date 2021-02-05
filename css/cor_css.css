@@ -7,7 +7,9 @@
     font-family: "Raleway";
     box-sizing: border-box;
 }
-
+body {
+    background-color: rgb(30,30,30)
+}
 .container{
     width: 100%;
     margin: auto;
@@ -15,12 +17,13 @@
 
 header{
     width: 80%;
-    margin:30px auto;
+    margin:4.5% auto;
 }
 header h1{
     font-size: 250%;
     font-family: "Liberation Mono";
     text-align: center;
+    color:rgb(230,230,230)
 }
 
 .proyect{
@@ -36,43 +39,60 @@ h3{
     font-size: 14;
     padding-left: 15%;
     margin-bottom: 0.5%;
+    color:rgb(230,230,230);
 }
 p{
     font-size: 14px;
     text-align: justify;
     padding-left: 2.5%;
+    color:rgb(230,230,230);
 }
 img{
     width: 100%;
+    border-radius: 5px;
+    box-shadow: rgb(230,230,230)0px 0px 0px;
 }
 .img{
-    width: 40%;
+    width: 45%;
     height: auto;
     padding: 1%;
 }
+
+
 
 /*MERCADO*/
 
 .mercado{
     display: flex;
     flex-wrap:wrap;
-    background-color: aqua;
+    background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
     margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
 }
 
 .text-1{
-    width: 60%;
+    width: 55%;
     padding: 1%;
+}
+.mercado .text-1 h2{
+    color:#DBDB51;
 }
 
 /*BALOICO*/
 
+.baloico-container{
+    width: 100%;
+    margin: 5% auto;
+    padding: 2%;
+    background-color: rgb(40,40,40);
+    border-radius: 5px;
+}
 .baloico{
     display: flex;
     flex-wrap:wrap;
-    background-color: grey;
     justify-content: center;
     align-items: center;
     margin: 0% auto;
@@ -80,29 +100,19 @@ img{
 .baloico-gato{
     display: flex;
     flex-wrap:wrap;
-    background-color: grey;
     justify-content: center;
     align-items: flex-end;
     margin: 0% auto;
 }
-.text-2{
-    width: 60%;
-    padding: 1%;
+.baloico .text-1 h2{
+    color:#008A00;
 }
-.baloico .img-bigger{
-    width: 100%;
-    max-height: 350px;
-    margin: 2% auto;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
+.baloico .text-1 h3{
+    color:#BDAB88;
 }
-.baloico .img-bigger img{
-    width: 80%;
-    object-fit: cover;
-    object-position: 35% 65%;
+.baloico-gato .text-1 h3{
+    color:#BDAB88;
 }
-
 /*------*/
 /*ARMANDO OLIVEIRA*/
 /*------*/
@@ -110,49 +120,57 @@ img{
 .oliveira{
     display: flex;
     flex-wrap:wrap;
-    background-color:brown;
+    background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
     margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+.text-2{
+    width: 55%;
+    padding: 1%;
+}
+.text-2 p{
+    width: 100%;
+    padding-left: 0%;
 }
 .text-3{
-    width: 99%;
-    padding: 1%;  
-}
-/*.text-4{
-    color: white;
-    font-size: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}*/
-
-
-
-
-
-.oliveira .img-bigger-up{
-    width: 70%;
-    max-height: 450px;
+    width: 100%;
     padding: 1%;
     display: flex;
     justify-content: center;
 }
-.oliveira .img-bigger-up img{
-    width: 100%;
-    object-fit: cover;
-    object-position: 75% 25%;
+.text-3 p{
+    width: 95%;
+    padding-left: 0%;
 }
+.text-4{
+    width: 100%;
+    padding: 1%;
+}
+.text-4 h2{
+    width: 100%; 
+}
+.oliveira .text-4 h2{
+    color:#C40826;
+}
+
 
 /*LINO*/
 
 .lino{
     display: flex;
     flex-wrap:wrap;
-    background-color: pink;
+    background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
     margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+.lino .text-1 h2{
+    color: #DB67C6;
 }
 
 /*BANCO*/
@@ -160,22 +178,15 @@ img{
 .banco{
     display: flex;
     flex-wrap:wrap;
-    background-color:darkcyan;
+    background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
     margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
 }
-.banco .img-bigger{
-    width: 80%;
-    max-height: 450px;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-}
-.banco .img-bigger img{
-    width: 100%;
-    object-fit: cover;
-    object-position: 40% 60%;
+.banco .text-4 h2{
+    color: #8026C4;
 }
 
 /*---*/
@@ -188,7 +199,7 @@ img{
     max-width: 800px;
     max-height: 350px;
     position: relative; 
-    margin: 1% 0%;
+    margin: 3% 0%;
     display: flex;
     align-content: center;
 }
@@ -207,8 +218,9 @@ img{
     height: 0%;
 }
 .img-container .overlay .text-over{
-    color: white;
-    white-space: nowrap;
+    color: rgb(230,230,230);
+    font-weight: 400;
+    font-size: 16px;
     position: absolute;
     overflow: hidden;
     width: 100%;
