@@ -25,6 +25,66 @@ header h1{
     text-align: center;
     color:rgb(230,230,230)
 }
+.sub-header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.selector-1{
+    width: 20%;
+    padding: 1.5% 3%;
+    margin: 4% 4% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.selector-2{
+    width: 20%;
+    padding: 1.5% 3%;
+    margin: 4% 4% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.selector-1:hover{
+    width: 27%;
+    color:black;
+    background-color: #AA46E8;
+    cursor: pointer;
+}
+.selector-1:hover + .selector-2{
+    width: 13%;
+    font-size: 14px;
+    padding: 1.5% 0.1%;
+}
+.selector-2:hover{
+    width: 27%;
+    color: black;
+    background-color: #B30C00;
+    cursor: pointer;
+}
+.selector1change{
+    width: 13%;
+    font-size: 14px;
+    padding: 1.5% 1%;
+    margin: 4% 4% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
 
 .proyect{
     width: 98%;
@@ -71,6 +131,7 @@ img{
     margin: 5% auto;
     padding: 2%;
     border-radius: 5px;
+    border-left: 1px solid #DBDB51;
 }
 
 .text-1{
@@ -89,6 +150,7 @@ img{
     padding: 2%;
     background-color: rgb(40,40,40);
     border-radius: 5px;
+    border-left: 1px solid #BDAB88;
 }
 .baloico{
     display: flex;
@@ -126,6 +188,7 @@ img{
     margin: 5% auto;
     padding: 2%;
     border-radius: 5px;
+    border-left: 1px solid #B30C00;
 }
 .text-2{
     width: 55%;
@@ -153,7 +216,7 @@ img{
     width: 100%; 
 }
 .oliveira .text-4 h2{
-    color:#C40826;
+    color:#B30C00;
 }
 
 
@@ -168,6 +231,7 @@ img{
     margin: 5% auto;
     padding: 2%;
     border-radius: 5px;
+    border-left: 1px solid #DB67C6;
 }
 .lino .text-1 h2{
     color: #DB67C6;
@@ -184,9 +248,36 @@ img{
     margin: 5% auto;
     padding: 2%;
     border-radius: 5px;
+    border-left: 1px solid #AA46E8;
 }
 .banco .text-4 h2{
-    color: #8026C4;
+    color: #AA46E8;
+}
+
+/*PARENTESIS*/
+
+.parentesis{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: rgb(40,40,40);
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
+    border-left: 1px solid #B30C00;
+    border-right: 1px solid #B30C00;
+}
+.parentesis .text-4 h2{
+    text-align: center;
+    color: #B30C00;
+}
+.parentesis .text-4 p{
+    text-align: center;
+}
+.parentesis .img{
+    width: 33%;
+    margin: 3.5% 0%;
 }
 
 /*---*/
