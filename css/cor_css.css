@@ -83,7 +83,7 @@ header h1{
     color:rgb(160,160,160);
     border: 1px solid rgb(150,150,150);
     border-radius: 10px;
-    transition: 0.6s ease;
+    transition: 0.5s ease;
 }
 
 .proyect{
@@ -128,7 +128,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 5% auto 10%;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #DBDB51;
@@ -137,6 +137,9 @@ img{
 .text-1{
     width: 55%;
     padding: 1%;
+    background-color: rgb(38,38,38);
+    border-radius: 4px;
+    border:2px solid rgb(39,39,39);
 }
 .mercado .text-1 h2{
     color:#DBDB51;
@@ -146,7 +149,7 @@ img{
 
 .baloico-container{
     width: 100%;
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 2%;
     background-color: rgb(40,40,40);
     border-radius: 5px;
@@ -185,7 +188,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #B30C00;
@@ -193,6 +196,9 @@ img{
 .text-2{
     width: 55%;
     padding: 1%;
+    background-color: rgb(38,38,38);
+    border-radius: 4px;
+    border:2px solid rgb(39,39,39);
 }
 .text-2 p{
     width: 100%;
@@ -203,6 +209,9 @@ img{
     padding: 1%;
     display: flex;
     justify-content: center;
+    background-color: rgb(38,38,38);
+    border-radius: 4px;
+    border:2px solid rgb(39,39,39);
 }
 .text-3 p{
     width: 95%;
@@ -211,6 +220,9 @@ img{
 .text-4{
     width: 100%;
     padding: 1%;
+    background-color: rgb(38,38,38);
+    border-radius: 4px;
+    border:2px solid rgb(39,39,39);
 }
 .text-4 h2{
     width: 100%; 
@@ -228,7 +240,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #DB67C6;
@@ -245,7 +257,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #AA46E8;
@@ -262,7 +274,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
+    margin: 10% auto 5%;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #B30C00;
