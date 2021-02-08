@@ -7,12 +7,16 @@
     font-family: "Raleway";
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: rgb(30,30,30)
 }
 .container{
     width: 100%;
     margin: auto;
+    overflow-y: scroll;
 }
 
 header{
@@ -57,8 +61,9 @@ header h1{
 }
 .selector-1:hover{
     width: 27%;
-    color:black;
-    background-color: #AA46E8;
+    color:#AA46E8;
+    background-color: rgb(15,15,15);
+    border-color: #AA46E8;
     cursor: pointer;
 }
 .selector-1:hover + .selector-2{
@@ -68,8 +73,9 @@ header h1{
 }
 .selector-2:hover{
     width: 27%;
-    color: black;
-    background-color: #B30C00;
+    color: #B30C00;
+    background-color: rgb(15,15,15);
+    border-color: #B30C00;
     cursor: pointer;
 }
 .selector1change{
@@ -86,10 +92,65 @@ header h1{
     transition: 0.5s ease;
 }
 
+.selector-3{
+    width: 20%;
+    padding: 1.5% 3%;
+    margin: 1% 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.selector-3:hover{
+    width: 27%;
+    color: #AA46E8;
+    background-color: rgb(15,15,15);
+    border-color: #AA46E8;
+    cursor: pointer;
+}
+.selector-3:hover + .selector-4{
+    width: 13%;
+}
+.selector-4{
+    width: 20%;
+    padding: 1.5% 3%;
+    margin: 1% 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.selector-4:hover{
+    width: 27%;
+    color: #B30C00;
+    background-color: rgb(15,15,15);
+    border-color: #B30C00;
+    cursor: pointer;
+}
+.selector3change{
+    width: 13%;
+    padding: 1.5% 3%;
+    margin: 1% 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(160,160,160);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+/******PROYECTO*******/
+
 .proyect{
     width: 98%;
     margin:30px auto;
-    
 }
 h2{
     font-size: 16px;
@@ -128,7 +189,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 5% auto 10%;
+    margin: 5% auto 20%;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #DBDB51;
@@ -149,7 +210,7 @@ img{
 
 .baloico-container{
     width: 100%;
-    margin: 10% auto;
+    margin: 20% auto;
     padding: 2%;
     background-color: rgb(40,40,40);
     border-radius: 5px;
@@ -181,17 +242,19 @@ img{
 /*------*/
 /*ARMANDO OLIVEIRA*/
 /*------*/
-
+.oliveira-container{
+    border-radius: 5px;
+    border-left: 1px solid #B30C00;
+    background-color: rgb(40,40,40);
+     margin: 20% auto;
+    padding: 2%;
+}
 .oliveira{
     display: flex;
     flex-wrap:wrap;
-    background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 10% auto;
-    padding: 2%;
-    border-radius: 5px;
-    border-left: 1px solid #B30C00;
+   
 }
 .text-2{
     width: 55%;
@@ -240,7 +303,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 10% auto;
+    margin: 20% auto;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #DB67C6;
@@ -250,17 +313,18 @@ img{
 }
 
 /*BANCO*/
-
-.banco{
-    display: flex;
-    flex-wrap:wrap;
+.banco-container{
     background-color: rgb(40,40,40);
-    justify-content: center;
-    align-items: center;
-    margin: 10% auto;
+    margin: 20% auto;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #AA46E8;
+}
+.banco{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
 .banco .text-4 h2{
     color: #AA46E8;
@@ -274,7 +338,7 @@ img{
     background-color: rgb(40,40,40);
     justify-content: center;
     align-items: center;
-    margin: 10% auto 5%;
+    margin: 20% auto 5%;
     padding: 2%;
     border-radius: 5px;
     border-left: 1px solid #B30C00;
@@ -291,6 +355,17 @@ img{
     width: 33%;
     margin: 3.5% 0%;
 }
+
+/*---FOOTER---*/
+
+footer{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 
 /*---*/
 /*OVERLAY*/
@@ -341,3 +416,37 @@ img{
 .img-container:hover .text-over{
     opacity: 1;
 }  
+
+/*----BOTON----*/
+
+.btn{
+    color:#FF7222;
+    width: 80px;
+    height: 80px;
+    margin:1.5% auto 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn img{
+    width: 60%;
+    height: auto;
+    transition: 0.5s ease;
+    opacity: 0.9;
+    filter: grayscale(0.4);
+}
+.btn img:hover{
+    opacity: 1;
+    filter: grayscale(0);
+     -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-10px);}
+}
+
