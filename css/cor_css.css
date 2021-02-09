@@ -9,6 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
+     overflow-y: scroll;
 }
 body {
     background-color: rgb(30,30,30)
@@ -16,7 +17,7 @@ body {
 .container{
     width: 100%;
     margin: auto;
-    overflow-y: scroll;
+   
 }
 
 header{
@@ -146,7 +147,9 @@ header h1{
     transition: 0.5s ease;
 }
 
+/*------*/
 /******PROYECTO*******/
+/*------*/
 
 .proyect{
     width: 98%;
@@ -367,6 +370,59 @@ footer{
 }
 
 
+
+
+/*---------*/
+/*---GALERIA---*/
+/*---------*/
+
+.grid{
+    width: 98%;
+    height: auto;
+    margin: 0% auto 2%;
+    border-radius: 10px;
+    background-color: rgb(40,40,40);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.img-grid{
+    width: 30%;
+    margin: 2% 1.2%;
+}
+.grid-2{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(40,40,40);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.grid-2 .img-grid{
+    width: 50%;
+    margin: 2%;
+}
+.grid-3{
+    width: 98%;
+    height: auto;
+    background-color: rgb(40,40,40);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+   color: rgb(150,150,150);
+}
+a:hover{
+    color: #AA46E8;
+}
+
 /*---*/
 /*OVERLAY*/
 /*-----*/
@@ -424,16 +480,17 @@ footer{
     width: 80px;
     height: 80px;
     margin:1.5% auto 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 .btn img{
-    width: 60%;
+    width: 50%;
     height: auto;
+    position: absolute;
+    top: 25%;
+    left: 25%;
     transition: 0.5s ease;
-    opacity: 0.9;
-    filter: grayscale(0.4);
+    opacity: 0.8;
+    filter: grayscale(0.3);
 }
 .btn img:hover{
     opacity: 1;
@@ -443,10 +500,23 @@ footer{
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0);}
-    100% { transform: translateY(-10px); }
+    100% { transform: translateY(-12px); }
 }
 @keyframes mover {
     0% { transform: translateY(0);}
-    100% { transform: translateY(-10px);}
+    100% { transform: translateY(-12px);}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
