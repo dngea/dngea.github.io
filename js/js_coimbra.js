@@ -1,6 +1,17 @@
+var dn = document.getElementById("dn");
+var info = document.getElementById("info");
+dn.addEventListener("mouseover", () => {
+  info.className = "infohover";
+}, false)
+dn.addEventListener("mouseout", () => {
+  info.className = "info";
+}, false);
+
+document.getElementById("dn").setAttribute('onclick', 'location.href = "fotografia.html"'); 
+
+
 document.getElementById("selector1").setAttribute('onclick', 'location.href = "coimbracor.html"'); 
 document.getElementById("selector2").setAttribute('onclick', 'location.href = "coimbragaleria.html"'); 
-
 
 
 var selector2 = document.getElementById("selector2");
