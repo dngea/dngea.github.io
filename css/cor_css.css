@@ -106,16 +106,17 @@ header h1{
     border: 1px solid rgb(150,150,150);
     border-radius: 10px;
     transition: 0.5s ease;
+    
 }
 .selector-3:hover{
-    width: 27%;
+    width: 26%;
     color: #AA46E8;
     background-color: rgb(15,15,15);
     border-color: #AA46E8;
     cursor: pointer;
 }
 .selector-3:hover + .selector-4{
-    width: 13%;
+    width: 14%;
 }
 .selector-4{
     width: 20%;
