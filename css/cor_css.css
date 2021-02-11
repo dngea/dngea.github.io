@@ -560,8 +560,8 @@ a{
 }
 .infohover{
     width: 100%;
-    background-color: rgb(10,10,10);
-    transition: 1.3s ease;
+    background-color: rgb(15,15,15);
+    transition: 1s ease;
     border-bottom:0.5px solid rgb(100,100,100);
 }
 
@@ -569,14 +569,22 @@ a{
     color:rgb(230,230,230);
     font-size: 18px;
     position: absolute;
-    top:1%;
-    right: 2%;
+    top:-1px;
+    right: 10px;
+    height: 40px;
+    width: 50px;
     opacity: 0.4;
     transition: 0.6s;
     cursor: pointer;
+    filter: invert(0.8);
 }
 .dn:hover{
     opacity: 1;
+}
+.dn img{
+    position: absolute;
+    width: 50px;
+    height: 40px;
 }
 
 /*---------------*/

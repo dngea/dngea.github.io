@@ -66,11 +66,11 @@ a:link{
     filter: grayscale(.5);
     border:2px solid rgba(30,30,30, .8);
     border-radius: 4px;
-    filter: brightness(.85);
+    filter: brightness(.78);
 }
 .item:hover{
     box-shadow: 6px 6px 15px rgba(0,0,0,1);
-    filter: brightness(1.02);
+    filter: brightness(1.05);
 }
 
 .item img{
@@ -125,24 +125,28 @@ a:link{
 }
 .infohover{
     width: 100%;
-    background-color: rgb(50,50,50);
-    transition: 1.3s ease;
-    border-bottom:0.5px solid rgb(100,100,100);
+    background-color: rgb(120,120,120);
+    transition: 1s ease;
+    border-bottom:2px solid black;
 }
 
 .dn{
-    color:black;
-    font-size: 18px;
     position: absolute;
-    top:1%;
+    top:-1px;
     right: 2%;
-    opacity: 0.9;
+    width: 50px;
+    height: 40px;
+    opacity: 0.6;
     transition: 0.6s;
     cursor: pointer;
 }
 .dn:hover{
     opacity: 1;
-    color:rgb(210,210,210);
+}
+.dn img{
+    position: absolute;
+    width: 50px;
+    height: 40px;
 }
 
 
