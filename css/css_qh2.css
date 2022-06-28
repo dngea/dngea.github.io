@@ -1,6 +1,9 @@
 /* ------------------------- */
 /* Estilos Generales */
 /* ------------------------- */
+
+
+
 *{
     margin:0;
     padding: 0;
@@ -168,4 +171,5 @@ img{
     background-color: rgb(210,210,210);
     margin: 8% auto;
     width: 80%;
+}
 }

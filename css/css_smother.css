@@ -1,5 +1,3 @@
-//--css_SMOTHER--//
-
 *{
     margin:0;
     padding:0;
@@ -29,7 +27,7 @@ header{
 
 header .titulo{
     text-align: center;
-    margin border-bottom: 40px;    
+    margin-bottom: 40px;    
     font-size: 250%;
     color: rgb(230,230,230);
 }
@@ -120,7 +118,7 @@ header .titulo{
 	cursor: pointer;
 	position: absolute;
     right: -20px;
-    top; -20px;
+    top: -20px;
 }
 
 .footer{
@@ -143,8 +141,5 @@ header .titulo{
 	.grid .item {
 		width: calc(50% - 20px);
 	}
+}
 
-
-
-   
-    

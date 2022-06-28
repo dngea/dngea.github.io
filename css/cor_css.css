@@ -1,6 +1,14 @@
 /*ESTILOS CSS "O COR DE COIMBRA"*/
 
 
+
+@media (min-width: 768px) {
+   nav{
+    display: flex;
+    justify-content: flex-end;
+   }
+}
+
 *{
     margin: 0;
     padding: 0;

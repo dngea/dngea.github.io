@@ -5,48 +5,72 @@
     <title>Fotografia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/css_fotografia.css">
+    <link rel="stylesheet" href="css/navigation.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'>
-    
-    <style>
-        body{
-            background-color:rgb(200,200,200);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+        
+
 </head>
 
 
 <body>
     
-<div class="contenedor">
-    
-             <div class="menu"><div class="info" id="info"></div></div>
-                <a href="index.html" class="dn" id="dn"><img src="images/bars.png"></a>
-   
-    <div class="titulo">Proyectos de Fotografía</div>
-    
+<!-- NAVIGATION--------------- -->
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="index.html">Home</a></li>
+            <li class="nav__li"><a href="fotografia.html">Photography</a></li>
+            <li class="nav__li"><a href="webprojects.html">Web Projects</a></li>
+            <li class="nav__li"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
+    <div class="path">
+        <p class="path__text"> <a href="index.html">home</a> / <a href="fotografia.html">photography</a></p>
+    </div>
+
+<!-- /NAVITAGION --------------->
+
+<div class="contenedor">
+   
+    <div class="titulo">Photography Projects</div>
+    
     <div class="grid">
     
-    
+    <div class="center-item">
     <div class="item">
-        <a href="coimbracor.html"><img src="img/fotografia/coimbra/gato-icon.jpg">
-        <div class="present-proyects"><p class="nombre">A cor de Coimbra.</p><p class="ano">(2021)</p></div>
+        <a href="fotografia_pages/coimbracor.html"><img src="img/fotografia/coimbra/gato-icon.jpg">
+        <div class="item__text">
+            <p class="nombre">A cor de Coimbra.</p>
+            <p class="ano">(2021)</p>
+        </div>
         </a>  
     </div>
-        
-    <div class="item">
-        <a href="quien-habla.html"><img src="img/fotografia/quienhabla/quienhablaicon.jpg">
-            <div class="present-proyects"><p class="nombre">Quien habla de ti.</p><p class="ano">(2020)</p></div>
-        </a>
     </div>
 
+
+    <div class="center-item">
     <div class="item">
-        <a href="smother.html"><img src="img/fotografia/smother/smothericon.jpg">
-        <div class="present-proyects"><p class="nombre">Smother.</p><p class="ano">(2018)</p></div>
+        <a href="fotografia_pages/quien-habla.html"><img src="img/fotografia/quienhabla/quienhablaicon.jpg">
+            <div class="item__text"><p class="nombre">Quien habla de ti.</p><p class="ano">(2020)</p></div>
+        </a>
+    </div>
+    </div>    
+
+    <div class="center-item">
+    <div class="item">
+        <a href="fotografia_pages/smother.html"><img src="img/fotografia/smother/smothericon.jpg">
+        <div class="item__text"><p class="nombre">Smother.</p><p class="ano">(2018)</p></div>
         </a>  
     </div>
-        
+    </div>
    
       
            
