@@ -1,7 +1,11 @@
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .nav{
-    height: 3rem;
+    height: 7rem;
     width: 100%;
     background-color: #1A1918;
     color: #D5D3C4;
@@ -14,7 +18,8 @@
    .nav{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 0 5rem;
    }
 }
 .nav .nav__ul{
@@ -25,13 +30,15 @@
 }
 .nav .nav__ul .nav__li{
     height: 100%;
+    width: 9rem;
     cursor: pointer;
     list-style: none;
-    font-family: 'raleway';
+    font-family: 'DM mono';
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.8rem;
+    margin-right: 1rem;
 }
 .nav .nav__ul .nav__li:hover{
     background-color: #CA9111;
@@ -41,8 +48,8 @@
 
 @media (min-width: 480px) {
     .nav .nav__ul .nav__li:last-of-type{
-        margin-right: 2rem;
-    }
+        margin-right: 0;
+        width: 7rem;
 }
 
 .nav .nav__ul .nav__li a {
@@ -50,6 +57,17 @@
     color: black;
 }
 
+.logo{
+    width: 10rem;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo:hover{
+    cursor: pointer;
+}
 
 .path{
     width: 100%;

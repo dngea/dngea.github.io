@@ -11,71 +11,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="css/style.css">  
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
 
 </head>
+
+
+
+
+
+
+
 <body>
 <!-- partial:index.partial.html -->
-<h1 class="title"> <span>Portfolio</span> | Daniel Gea</h1>
 
-<div id="app" class="container">
-    
-    <a href="fotografia.html">
-    <card data-image="img/home/dc.jpg">
-    <h1 slot="header">Photography</h1>
-    <p slot="content">Projects, tests and mistakes.</p>
-    </card>
-    </a>
-    
-    <a href="webprojects.html">
-      <card data-image="img/home/robot.jpg">
-        <h1 slot="header">Web Projects</h1>
-        <p slot="content">University, courses and personal work.</p>
+<div class="body__container">
+  <h1 class="title"> <span>Portfolio</span> | Daniel Gea</h1>
+
+  <div id="app" class="container">
+      
+      <a href="multimedia.html">
+      <card data-image="img/home/multimedia_icon.jpg">
+      <h1 slot="header">Multimedia art projects</h1>
+      <p slot="content">Media art, interfaces, creative programming.</p>
       </card>
-    </a>
-    
-  <card data-image="img/home/foto-yo.jpg">
-    <h1 slot="header">About</h1>
-    <p slot="content">Studies, Career, thougths</p>
-  </card>
-    
-</div>
-    
-    <footer>
-        <div class="socialmedia">
-            <a href="https://www.instagram.com/dnpgzl_/?hl=es" target="_blank">
-        <img src="img/instagram.png" width="38px" height="38px">
-            </a>
-        </div>
-        
-        <div class="socialmedia">
-            <a href="https://www.linkedin.com/in/daniel-gea-palenzuela-389a02177/" target="_blank">
-        <img src="img/linkedin.png" width="38px" height="38px">
-            </a>
-        </div>
-        
-        <div class="socialmedia">
-            <a href="https://github.com/dngea" target="_blank">
-        <img src="img/github.png" width="38px" height="38px">
-            </a>
-        </div>
+      </a>
+      
+      <a href="ux_ui_design.html">
+        <card data-image="img/home/ux_icon.jpg">
+          <h1 slot="header">UX/UI design</h1>
+          <p slot="content">Web, UX/UI design and research.</p>
+        </card>
+      </a>
+      
+      <a href="photography.html">  
+      <card data-image="img/home/photography_icon.jpg">
+        <h1 slot="header">Photography & video</h1>
+        <p slot="content">Projects, tests and mistakes.</p>
+      </card>
+      </a>
 
-        <div class="socialmedia">
-          <a href="https://vsco.co/dngea/gallery" target="_blank">
-      <img src="img/vsco.png" width="38px" height="38px">
+      <a href="about.html">
+      <card data-image="img/home/robot.jpg">
+        <h1 slot="header">About & contact</h1>
+        <p slot="content">Studies, experience, goals.</p>
+      </card>
+      </a>
+      
+  </div>
+      
+  <footer>
+      <div class="socialmedia">
+          <a href="https://www.instagram.com/dnpgzl_/?hl=es" target="_blank">
+      <img src="img/instagram.png" width="38px" height="38px">
           </a>
       </div>
-        
-    </footer>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
-    <script  src="js/script.js"></script>
+      
+      <div class="socialmedia">
+          <a href="https://www.linkedin.com/in/daniel-gea-palenzuela-389a02177/" target="_blank">
+      <img src="img/linkedin.png" width="38px" height="38px">
+          </a>
+      </div>
+      
+      <div class="socialmedia">
+          <a href="https://github.com/dngea" target="_blank">
+      <img src="img/github.png" width="38px" height="38px">
+          </a>
+      </div>
+
+      <div class="socialmedia">
+        <a href="https://vsco.co/dngea/gallery" target="_blank">
+    <img src="img/vsco.png" width="38px" height="38px">
+        </a>
+    </div>
+      
+  </footer>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+      <script  src="js/script.js"></script>
+</div>
 
     
     
