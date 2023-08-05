@@ -9,7 +9,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    height: 968px;
+    width: 100%;
+    overflow-x: hidden;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -18,7 +19,6 @@ html {
 body{ 
     font-family: 'Roboto';
     background-color: var(--background);
-    height: 100%;
 }
 
 
@@ -30,45 +30,40 @@ body{
 /* BODY--------------- */
 
 .contenedor{
-    width: 100%;
-    height: 100%;
+    max-width: 1920px;
     display: flex;
-
+    margin: 0 auto;
+    overflow:visible;
 }
 
 .page__description{
     width: 40%;
-    height: 100%;
-    padding: 5rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content:start;
-    border-right: 2px solid black;
 }
 
 .page__showProjects{
     width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-left: 2px solid black;
+    min-width: 0;
 }
 
 .titulo {
     font-family: "DM mono";
-    font-size:4rem;
+    font-size:3rem;
     text-align: left;
     font-weight: 400;
     color: var(--dark);
-    margin: 6rem 0 3rem;
-    padding: 2%;
+    margin: 1.5rem 0 1.5rem;
+    padding: 1%;
     width: 100%;
 }
 
 .description{
     font: "Roboto";
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
     letter-spacing: 0.05rem;
     text-align: justify;
@@ -98,32 +93,41 @@ a{
 
 
 .grid2x2{
-    width: 70%;
-    height:88%;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    justify-content: center;
+    align-content: center;
 }
+
+.grid_responsive{
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+
 
 .item{ 
     position: relative;
     /* border: 2px solid black; */
-    width: 100%;
-    height: 100%;
+    min-width: 21rem;
+    min-height: 21rem;
     background-repeat:no-repeat;
     object-fit:cover;
     background-position: center center;
-
     filter: grayscale(1);
-    background-size: 100%;
+    background-size: cover;
 }
 .item:hover{
     filter: grayscale(0);
-    background-size: 125%;
-    transition: 0.4s ease-in-out;
-    filter: brightness(1.1);
-    border: 10px solid var(--primary);
+    background-size: 150%;
+    transition: 0.3s ease-in-out;
+    filter: brightness(1.2);
+    border: 6px solid var(--primary);
 }
 
 
@@ -131,7 +135,7 @@ a{
     position: absolute;
     bottom: 0rem;
     width: 100%;
-    padding: 2rem;
+    padding: 1.3rem;
     color: rgb(250,250,250);
 }
 
@@ -139,19 +143,20 @@ a{
     background-color: rgba(30,30,30, 0); 
 }
 .item:hover .item__text{
-    background-color: rgba(30, 30, 30, 0.633); 
+    background-color: rgba(30, 30, 30, 0.929); 
     transition: 0.3s ease-in-out;
 }
 
 .item__text .nombre{
     font-size: 0rem;
-}
-.item:hover .item__text .nombre{
-    font-size:1.6rem; 
-    font-weight: 500;
+    font-weight: 800;
     font-family: "Roboto";
     text-align: left;
     letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+}
+.item:hover .item__text .nombre{
+    font-size:1.2rem; 
 }
 
 
@@ -189,7 +194,40 @@ a{
     height: 40px;
 }
 
+.grid--bottom{
+    background-position: center bottom;
+}
+.grid--top{
+    background-position: center top;
+}
 
 
 
+@media (max-width: 960px) {
 
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .page__description{
+        width: 100%;
+    }
+
+    .page__showProjects{
+        width: 100%;
+        
+    }
+    .page__showProjects{
+        border-left: 0px solid black;
+    }
+    .grid_responsive{
+        padding: 2.5rem;
+    }
+    .item .item__text{
+        background-color: rgba(30, 30, 30, 0.75); 
+    }
+    .item .item__text .nombre{
+        font-size: 1rem;
+    } 
+   
+}

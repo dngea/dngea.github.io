@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fotografia</title>
+    <title>Multimedia Art Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/css_multimedia.css">
@@ -28,7 +28,6 @@
     
 <!-- NAVIGATION--------------- -->
     <nav class="nav">
-
         <a href="index.html"><div class="logo">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
         <ul class="nav__ul">
             <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
@@ -38,15 +37,28 @@
         </ul>
     </nav>
 
-    <!-- <div class="path">
-        <p class="path__text"> <a href="index.html">home</a> / <a href="fotografia.html">photography</a></p>
-    </div> -->
+    <!-- OVERLAY MENU -->
 
-<!-- /NAVITAGION --------------->
+    <div class="burger">
+        <img src="img/nav/burger.png" onclick="openNav()" class="burger">
+    </div>
+    <a href="index.html"><div class="logo--overlay">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
+    
+    <div id="overlay_nav" class="overlay">
+        <img src="img/nav/burger.png" class="closebtn" onclick="closeNav()" height="30px" width="40px">
+        <div class="overlay-content">
+            <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
+            <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
+            <li class="nav__li"><a href="photography.html">Photography & video</a></li>
+            <li class="nav__li"><a href="about.html">About & contact</a></li>
+        </div>
+        
+    </div>
+
 
 <div class="contenedor">
 
-<!-- PAGE DESCRIPTION ---------------- -->
+    <!-- PAGE DESCRIPTION ---------------- -->
 
     <div class="page__description">
 
@@ -55,32 +67,50 @@
 
     </div>
 
-
-
-
-<!-- PAGE SHOW PROJECTS --------------- -->
+    <!-- PAGE SHOW PROJECTS --------------- -->
     <div class="page__showProjects">
 
-        <div class="grid2x2">
+        <div class="grid_responsive">
     
             <a href="fotografia_pages/smother.html">
-            <div class="item item--effect" style="background-image: url(img/fotografia/quienhabla/quienhablaicon.jpg);">
-                <div class="item__text"><p class="nombre">[2021] A cor de coimbra.</p></div>
+            <div class="item " style="background-image: url(img/multimedia/brutal_icon.png);">
+                <div class="item__text"><p class="nombre">[2023] Brutal dellusions.</p></div>
             </div>
             </a>
  
         
 
             <a href="fotografia_pages/smother.html">
-            <div class="item" style="background-image: url(img/fotografia/coimbra/gato-icon.jpg);">
-                <div class="item__text"><p class="nombre">[2020] Quien habla de ti.</p></div>
+            <div class="item " style="background-image: url(img/multimedia/casadamusica_icon.jpg);">
+                <div class="item__text"><p class="nombre">[2023] Immersive sound experience in "Casa da Música"</p></div>
             </div>
             </a>
            
         
             <a href="fotografia_pages/smother.html">
-            <div class="item" style="background-image: url(img/fotografia/smother/smothericon.jpg);">
-                <div class="item__text"><p class="nombre">[2018] Smother.</p></div>   
+            <div class="item " style="background-image: url(img/multimedia/lighttouch_icon.jpg);">
+                <div class="item__text"><p class="nombre">[2023] A light touch.</p></div>   
+            </div>
+            </a>
+
+
+            <a href="https://editor.p5js.org/dngeap/full/2xaZSyNuh">
+            <div class="item" style="background-image: url(img/multimedia/dialogues_icon.jpg);">
+                <div class="item__text"><p class="nombre">[2022] Universe Dialogues.</p></div>   
+            </div>
+            </a>
+
+
+            <a href="fotografia_pages/smother.html">
+            <div class="item" style="background-image: url(img/multimedia/media_icon.jpg);">
+                <div class="item__text"><p class="nombre">[2022] In medias res.</p></div>   
+            </div>
+            </a>
+
+
+            <a href="fotografia_pages/smother.html">
+            <div class="item" style="background-image: url(img/multimedia/coding_icon.jpg);">
+                <div class="item__text"><p class="nombre">[2022] Creative Coding.</p></div>   
             </div>
             </a>
            
@@ -98,7 +128,9 @@
     
 </div>
     
-  <script src="js/js_coimbra.js"></script>
+    <script src="js/js_coimbra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
     
 </html>
