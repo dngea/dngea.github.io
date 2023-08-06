@@ -9,6 +9,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+body{
+    width: 100%;
+}
 
 .nav{
     height: 7rem;
@@ -77,7 +80,7 @@ a{
 
 
 
-/* DROPDOWNS MENUS */
+/* OVERLAY MENUS */
 
 .burger{
     visibility: hidden;
@@ -111,7 +114,7 @@ a{
 }
 .overlay-content .nav__li{
     width: 100%;
-    padding: 4rem 6rem;
+    padding: 2.5rem 6rem;
     font-family: "DM Mono";
     font-size: 1.5rem;
     color: var(--secondary);
@@ -129,6 +132,9 @@ a{
     color: rgba(255, 255, 255, 0.788);
     z-index: 2;
     cursor: pointer;
+  }
+  .closebtn:hover{
+    content: url("../img/nav/burger-hover.png");
   }
 
 
@@ -168,6 +174,9 @@ a{
    .burger img{
         width: 100%;
    }
+   .burger:hover > img{
+        content: url("../img/nav/burger-hover.png");
+   }
 
    .nav__ul{
         visibility: hidden;
@@ -188,4 +197,8 @@ a{
         color: var(--secondary);
         font-size: 1.5rem;
    }
+}
+
+.current-page{
+    background-color: var(--primary);
 }

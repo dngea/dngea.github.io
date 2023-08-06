@@ -57,6 +57,19 @@ a{
     text-align: justify;
     margin: 1rem 0;
 }
+.line--link{
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--secondary);
+    letter-spacing: 0.15rem;
+    text-align: justify;
+    margin: 1rem 0;
+}
+.line--link:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
 .container{
     max-width: 1920px;
     margin: 0 auto;
@@ -178,6 +191,22 @@ footer{
     width: 100%;
     object-fit: cover;
 }
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+    padding: 2rem;
+	}
 
 @media (min-width: 672px) {
     .container{

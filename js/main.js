@@ -8,9 +8,7 @@ function openNav() {
     document.getElementById("overlay_nav").style.visibility = "hidden";
   }
 
-//   function border(){
-//     document.getElementById("overlayBorder").style.borderBottom = "15px";
-//   }
+
 
 
   gsap.utils.toArray(".slideText").forEach(text => {
