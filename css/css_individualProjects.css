@@ -210,7 +210,7 @@ footer{
 
 @media (min-width: 672px) {
     .container{
-        margin-top: -8rem;
+        margin-top: -2rem;
    }
    .projectGallery{
     margin-bottom: 3rem;
@@ -230,7 +230,7 @@ footer{
 
 @media (min-width: 960px) {
     .container{
-        margin-top: -12rem;
+        margin-top: -4rem;
         padding: 5rem;
    }
    .inner-navigation{

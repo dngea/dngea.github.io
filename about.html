@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="css/css_multimedia.css">
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- DM MONO -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">    
+    <title>About & contact</title>
+</head>
+<body>
+
+    <!-- NAVIGATION--------------- -->
+    <nav class="nav">
+        <a href="index.html"><div class="logo">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
+            <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
+            <li class="nav__li"><a href="photography.html">Photography & video</a></li>
+            <li class="nav__li current-page"><a href="about.html">About & contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- OVERLAY MENU -->
+
+    <div class="burger">
+        <img src="img/nav/burger.png" onclick="openNav()" class="burger">
+    </div>
+    <a href="index.html"><div class="logo--overlay">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
+    
+    <div id="overlay_nav" class="overlay">
+        <img src="img/nav/burger.png" class="closebtn" onclick="closeNav()" height="30px" width="40px">
+        <div class="overlay-content">
+            <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
+            <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
+            <li class="nav__li"><a href="photography.html">Photography & video</a></li>
+            <li class="nav__li"><a href="about.html">About & contact</a></li>
+        </div>
+        
+    </div>
+
+
+    <!-- CONTENT -->
+
+    <div class="contenedor-about">
+
+        <div class="about">
+            <div class="about__img">
+                <img src="img/home/about.jpg" alt="">
+            </div>
+            <div class="about__info">
+                <div class="h2">About</div>
+                <div class="p">
+                    I was born in the south of Spain, in a city called Granada. I lived there until my age of 19 and then I started to live abroad, experience which made me grow in a personal and professional way.
+                    <br>
+                    <br>As of today, I am a Multimedia Master's student at the University of Porto with a background in Information Sciences. Along my academic journey, I have had the privilege of studying at other esteemed institutions such as the University of Granada, Salamanca and Coimbra, expanding my academic horizons and intercultural competences.
+                    <br>
+                    <br>Currently, I am actively engaged in projects that allow me to apply my skills and knowledge of multimedia design to solve complex problems and interact with diverse teams. I am passionate about creating innovative multimedia experiences that captivate audiences and push the boundaries of what is possible.</div>
+            </div>
+        </div>
+
+        <div class="about-information">
+            <div class="about-information__topic">
+                <div class="h2">Studies</div>
+                <div class="p">
+                    (2022-2024) Masters' degree in Multimedia, Interactive technologies and Digital games.
+                    <br>(2018-2022) Bachellors' degree in Information Science, Web information.
+                    <br>(2019-2021) Editing and postproduction of video.
+                    <br>(2019-2020) Photography.
+                </div>
+            </div>
+            <div class="about-information__topic">
+                <div class="h2">Experience</div>
+                <div class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quo molestias beatae, quidem voluptatum, illo delectus sint nihil, sit ab perspiciatis enim eius doloremque incidunt dolores minima! Accusamus, ad quia.</div>
+            </div>
+            <div class="about-information__topic">
+                <div class="h2">Skills</div>
+                <div class="p">Tech: Figma, FrontEnd, Creative Framworks, Arduino, Adobe, Affinity
+                    <br>Soft skills: Intercultural competence, Iniciative, Problem solving, Patience, Giving feedback.
+                </div>
+            </div>
+            <div class="about-information__topic">
+                <div class="h2">Languages</div>
+                <div class="p">English <br>Portuguese <br> Spanish <br>German(Learning)</div>
+            </div>
+            
+        </div>
+
+        <div class="contact">
+            <div class="h2">Contact</div>
+            <div class="p">E-mail: dngeap@gmail.com</div>
+        </div>
+
+        <div class="footer"></div>
+
+
+    </div>
+
+
+    <script src="js/js_coimbra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
