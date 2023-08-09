@@ -337,3 +337,16 @@ img{
     
 
 }
+
+.flex{
+    width: 100%;
+    display: flex;
+    gap: 20%;
+}
+.bold{
+    font-family: "Raleway";
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}

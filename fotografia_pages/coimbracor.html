@@ -14,20 +14,34 @@
     
 <body>
 
+    <!-- NAVIGATION--------------- -->
     <nav class="nav">
+        <a href="../index.html"><div class="logo">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
         <ul class="nav__ul">
-            <li class="nav__li"><a href="../index.html">Home</a></li>
-            <li class="nav__li"><a href="../fotografia.html">Photography</a></li>
-            <li class="nav__li"><a href="../webprojects.html">Web Projects</a></li>
-            <li class="nav__li"><a href="../about.html">About</a></li>
+            <li class="nav__li"><a href="../multimedia.html">Multimedia art projects</a></li>
+            <li class="nav__li"><a href="../ux_ui_design.html">UX/UI design</a></li>
+            <li class="nav__li current-page"><a href="../photography.html">Photography & video</a></li>
+            <li class="nav__li"><a href="../about.html">About & contact</a></li>
         </ul>
     </nav>
 
-    <div class="path">
-        <p class="path__text"><a href="../index.html">home</a> / <a href="../fotografia.html">photography</a> / <a href="coimbracor.html">cor de coimbra</a></p>
+    <!-- OVERLAY MENU -->
+
+    <div class="burger">
+        <img src="img/nav/burger.png" onclick="openNav()" class="burger">
     </div>
-
-
+    <a href="index.html"><div class="logo--overlay">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
+    
+    <div id="overlay_nav" class="overlay">
+        <img src="img/nav/burger.png" class="closebtn" onclick="closeNav()" height="30px" width="40px">
+        <div class="overlay-content">
+            <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
+            <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
+            <li class="nav__li"><a href="photography.html">Photography & video</a></li>
+            <li class="nav__li"><a href="about.html">About & contact</a></li>
+        </div>
+        
+    </div>
 
 
     <div class="container">
