@@ -157,6 +157,9 @@ body{
     .overlay{
         max-width: 960px;
     }
+    .overlay-content{
+        max-width: 960px;
+    }
 
 }
 
@@ -186,6 +189,9 @@ body{
    .overlay{
     max-width: 672px;
    }
+   .overlay-content{
+    max-width: 672px;
+    }
 
    .nav__ul{
         visibility: hidden;
