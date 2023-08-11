@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- MY STYLES -->
-    <link rel="stylesheet" href="css/css_multimedia.css">
-    <link rel="stylesheet" href="css/navigation.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_navigation.css">
+        
     <!-- DM MONO -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,16 +25,24 @@
 </head>
 <body>
 
-    <!-- NAVIGATION--------------- -->
+    <!-- NAVIGATION--------------->
+    
     <nav class="nav">
-        <a href="index.html"><div class="logo">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
-        <ul class="nav__ul">
-            <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
-            <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
-            <li class="nav__li"><a href="photography.html">Photography & video</a></li>
-            <li class="nav__li current-page"><a href="about.html">About & contact</a></li>
-        </ul>
+        <div class="nav--width">
+            <a href="index.html">
+            <div class="logo">Portfolio<br><span style= "color: #CA9111;">Daniel Gea</span>
+            </div>
+            </a>
+            
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
+                <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
+                <li class="nav__li"><a href="photography.html">Photography & video</a></li>
+                <li class="nav__li current-page"><a href="about.html">About & contact</a></li>
+            </ul>
+        </div>
     </nav>
+
 
     <!-- OVERLAY MENU -->
 
@@ -41,7 +50,10 @@
         <img src="img/nav/burger.png" onclick="openNav()" class="burger">
     </div>
 
-    <a href="index.html"><div class="logo--overlay">Portfolio <br> <p style= "color: #CA9111;">Daniel Gea</style></div></a>
+    <a href="index.html">
+        <div class="logo--overlay">Portfolio <br> <span style= "color: #CA9111;">Daniel Gea</span>
+        </div>
+    </a>
     
     <div id="overlay_nav" class="overlay">
         <img src="img/nav/burger.png" class="closebtn" onclick="closeNav()" height="30px" width="40px">
@@ -51,7 +63,6 @@
             <li class="nav__li"><a href="photography.html">Photography & video</a></li>
             <li class="nav__li"><a href="about.html">About & contact</a></li>
         </div>
-        
     </div>
 
 

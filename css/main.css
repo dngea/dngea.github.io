@@ -9,8 +9,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    width: 100%;
     overflow-x: hidden;
+    margin:0;
+    padding: 0;
+    min-width: 100%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -21,13 +23,8 @@ body{
     background-color: var(--background);
     margin: 0 auto;
     width: inherit;
-    border: 5px solid red;
+    height: 87vh;
 }
-
-
-
-
-
 
 
 /* BODY--------------- */
@@ -41,7 +38,7 @@ body{
 
 .page__description{
     width: 40%;
-    padding: 4rem;
+    padding: 4rem 8rem ;
     display: flex;
     flex-direction: column;
     justify-content:start;
@@ -49,15 +46,16 @@ body{
 
 .page__showProjects{
     width: 60%;
-    border-left: 2px solid black;
+
     min-width: 0;
+    height: 100%;
 }
 
 .titulo {
-    font-family: "DM mono";
-    font-size:3rem;
+    font-family: "Raleway";
+    font-size: 4.5rem;
     text-align: left;
-    font-weight: 400;
+    font-weight:800;
     color: var(--dark);
     margin: 1.5rem 0 1.5rem;
     padding: 1%;
@@ -65,12 +63,13 @@ body{
 }
 
 .description{
+    padding: 2rem 0 0;
     font: "Roboto";
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
     letter-spacing: 0.05rem;
     text-align: justify;
-
+    font-weight:300;
 }
 
 
@@ -95,7 +94,7 @@ a{
 
 
 
-.grid2x2{
+/* .grid2x2{
     padding: 3rem;
     width: 100%;
     height: 100%;
@@ -104,12 +103,13 @@ a{
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-content: center;
-}
+} */
 
 .grid_responsive{
-    padding: 4rem;
+    padding: 6rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    border-left: 2px solid black;
 }
 
 
@@ -117,8 +117,8 @@ a{
 .item{ 
     position: relative;
     /* border: 2px solid black; */
-    min-width: 21rem;
-    min-height: 21rem;
+    min-width: 30rem;
+    min-height: 30rem;
     background-repeat:no-repeat;
     object-fit:cover;
     background-position: center center;
@@ -152,14 +152,14 @@ a{
 
 .item__text .nombre{
     font-size: 0rem;
-    font-weight: 800;
+    font-weight: 400;
     font-family: "Roboto";
     text-align: left;
     letter-spacing: 0.1rem;
     line-height: 1.7rem;
 }
 .item:hover .item__text .nombre{
-    font-size:1.2rem; 
+    font-size:1.5rem; 
 }
 
 
@@ -282,35 +282,57 @@ img{
         padding: 2rem;
     }
 }
-@media (max-width: 960px) {
 
+@media (max-width: 672px) {
+    .page__description{
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 960px) {
     .contenedor{
         flex-direction: column;
     }
 
     .page__description{
         width: 100%;
+        padding: 4rem 6rem;
     }
 
     .page__showProjects{
         width: 100%;
-        
-    }
-    .page__showProjects{
-        border-left: 0px solid black;
     }
     .grid_responsive{
-        padding: 2.5rem;
+        padding: 3rem 6rem;
+        border-left: 0px solid black;
+    }
+    .item{
+        margin: 0 0 0.5rem;
     }
     .item .item__text{
         background-color: rgba(30, 30, 30, 0.75); 
     }
     .item .item__text .nombre{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        padding: 1.5rem;
     } 
    
 }
 @media (min-width: 920px) {
+
+    .contenedor{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .page__description{
+        height: 100%;
+        padding-top: 10rem;
+    }
+    .description{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
     
    /* ABOUT */
     .about{

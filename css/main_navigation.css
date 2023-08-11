@@ -12,14 +12,20 @@ a{
 
 .nav{
     height: 7rem;
-    width: 90%;
+    width: 100%;
     background-color: #1A1918;
     color: #D5D3C4;
+    
+    z-index: 1;
+    padding: 0 5rem;
+}
+.nav--width{
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
-    padding: 0 5rem;
 }
 
 .nav .nav__ul{
@@ -58,7 +64,6 @@ a{
 }
 
 .logo{
-    width: 10rem;
     height: 100%;
     font-size: 1.3rem;
     display: flex;
@@ -85,6 +90,9 @@ a{
 }
 .logo--overlay{
     visibility: hidden;
+    display: none;
+    font-size: 1.2rem;
+    color: var(--secondary);
 }
 
 .overlay{
@@ -163,8 +171,11 @@ a{
 @media (max-width: 672px) {
 
     .nav{
-        position: relative;
         padding: 0 2.5rem;
+    }
+    .nav--width{
+        position: relative;
+        justify-content: center;
     }
    .burger{
         visibility: visible;
@@ -200,14 +211,12 @@ a{
     visibility: hidden;
    }
    .logo--overlay{
-    visibility: visible;
+        visibility: visible;
+        display: block;
         position: absolute;
-        top: 2rem;
+        top: 2.6rem;
         left: 3rem;
         z-index: 4;
-        
-        color: var(--secondary);
-        font-size: 1.5rem;
    }
 }
 

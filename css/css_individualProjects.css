@@ -40,10 +40,10 @@ a{
 }
 .p{
     font-family: "Roboto";
-    font-weight: 3p00;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: 1.5rem;
     color: var(--secondary);
-    line-height: 1.75rem;
+    line-height: 2.8rem;
     letter-spacing: 0.15rem;
     text-align: justify;
     margin: 3rem 0;
@@ -51,16 +51,17 @@ a{
 .line{
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: var(--secondary);
     letter-spacing: 0.15rem;
     text-align: justify;
     margin: 1rem 0;
+    line-height: 2.5rem;
 }
 .line--link{
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: var(--secondary);
     letter-spacing: 0.15rem;
     text-align: justify;
@@ -71,7 +72,7 @@ a{
     cursor: pointer;
 }
 .container{
-    max-width: 1920px;
+    max-width: 1544px;
     margin: 0 auto;
 }
 
@@ -82,18 +83,18 @@ a{
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-
 }
+
 
 /* INNER NAVIGATION */
 .inner-navigation{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 5rem 2rem;
     height: 8rem;
 }
 .buttons{
-    width: 8rem;
+    width: 10rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -143,7 +144,7 @@ a{
 }
 .button__info{
     font-family: "Roboto";
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     color: var(--secondary)
 }
@@ -177,6 +178,7 @@ a{
 .projectContent__description{
     display: inline-block;
     width: 100%;
+    padding: 2rem;
 }
 .projectContent__description:last-of-type{
     margin: 4rem 0;
@@ -212,18 +214,30 @@ footer{
     .container{
         margin-top: -2rem;
    }
+   .inner-navigation{
+    padding: 8rem 5rem;
+    }
+    .projectContent{
+        padding: 2rem 5rem;
+    }
    .projectGallery{
-    margin-bottom: 3rem;
+        margin-bottom: 3rem;
+        padding: 2rem 5rem;
    }
    .projectContent__description{
-    display: inline-block;
-    width: 49%;
+        display: inline-block;
+        width: 50%;
+        padding: 2.5rem;
     }
     .projectContent__description:last-of-type{
         margin: 0;
         width: 30%;
         margin-left: 3rem;
     }
+    .projectContent2{
+        padding: 2rem 5rem;
+    }
+    
 }
 
 
@@ -234,7 +248,7 @@ footer{
         padding: 5rem;
    }
    .inner-navigation{
-    padding: 0 2rem;
+    padding: 8rem 6rem;
     margin-top: -3rem;
     }
    .projectGallery{
