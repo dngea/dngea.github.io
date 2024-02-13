@@ -108,7 +108,7 @@ a{
 .grid_responsive{
     padding: 6rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     border-left: 2px solid black;
 }
 
@@ -117,8 +117,8 @@ a{
 .item{ 
     position: relative;
     /* border: 2px solid black; */
-    min-width: 30rem;
-    min-height: 30rem;
+    min-width: 27rem;
+    min-height: 27rem;
     background-repeat:no-repeat;
     object-fit:cover;
     background-position: center center;
@@ -237,8 +237,8 @@ img{
     font-family: "Raleway";
     font-weight: 800;
     color: var(--dark);
-    font-size: 1.5em;
-    padding: 2rem 0 1rem;
+    font-size: 3em;
+    padding: 3rem 0 1rem;
 }
 .p{
     font-family: "Roboto";
@@ -264,6 +264,21 @@ img{
     width: 100%;
     padding: 2rem;
     margin: 2rem 0 5rem 0;
+}
+.contact .p{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.about__info .p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.about-information .p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+    text-align: left;
 }
 
 .footer{
@@ -327,10 +342,10 @@ img{
     }
     .page__description{
         height: 100%;
-        padding-top: 10rem;
+        padding-top: 6rem;
     }
     .description{
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 3rem;
     }
     
@@ -343,9 +358,20 @@ img{
         width: 60%;
         padding: 2rem;
     }
+    .about__info .p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 300;
+    }
     .about-information{
         padding: 1rem 6rem;
         margin-bottom: 2rem;
+    }
+    .about-information .p{
+        font-size: 1.5rem;
+        line-height: 3rem;
+        font-weight: 300;
+        text-align: justify;
     }
     .contact{
         padding: 0 6rem;

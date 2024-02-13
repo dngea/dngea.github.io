@@ -1,20 +1,29 @@
-/* ------------------------- */
-/* Estilos Generales */
-/* ------------------------- */
 
-
+ /* --- QUIEN HABLA DE TI --- */
 
 *{
     margin:0;
     padding: 0;
+    font-family: "Raleway";
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    margin:0;
+    padding: 0;
+    min-width: 100%;
 }
 
 body {
-     background-color: rgb(30,30,30);
+    background-color: rgb(30,30,30);
     font-family: "Raleway";
-    
 }
+
 
 .container{
     width: 100%;
