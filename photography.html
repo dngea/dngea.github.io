@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Fotografia</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/home/round.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/home/round.ico" type="image/x-icon">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -18,72 +22,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_navigation.css">
     
-    <!-- DM MONO -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&family=Montserrat:wght@900&family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
+    <!-- IBM PLEX SANS and Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- ROBOTO -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">  
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
     
-    <!-- NAVIGATION--------------->
-        
-    <nav class="nav">
-        <div class="nav--width">
-            <a href="index.html">
-            <div class="logo">Portfolio<br><span style= "color: #CA9111;">Daniel Gea</span>
-            </div>
-            </a>
-            
-            <ul class="nav__ul">
-                <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
-                <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
-                <li class="nav__li current-page"><a href="photography.html">Photography & video</a></li>
-                <li class="nav__li"><a href="about.html">About & contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- ADD HEADER -->
+    <div id="header"></div>
 
 
-    <!-- OVERLAY MENU -->
+    <div class="contenedor">
 
-    <div class="burger">
-        <img src="img/nav/burger.png" onclick="openNav()" class="burger">
-    </div>
-
-    <a href="index.html">
-        <div class="logo--overlay">Portfolio <br> <span style= "color: #CA9111;">Daniel Gea</span>
-        </div>
-    </a>
-
-    <div id="overlay_nav" class="overlay">
-        <img src="img/nav/burger.png" class="closebtn" onclick="closeNav()" height="30px" width="40px">
-        <div class="overlay-content">
-            <li class="nav__li"><a href="multimedia.html">Multimedia art projects</a></li>
-            <li class="nav__li"><a href="ux_ui_design.html">UX/UI design</a></li>
-            <li class="nav__li"><a href="photography.html">Photography & video</a></li>
-            <li class="nav__li"><a href="about.html">About & contact</a></li>
-        </div>
-    </div>
-
-
-<div class="contenedor">
-
-    <!-- PAGE DESCRIPTION ---------------- -->
+        <!-- PAGE DESCRIPTION ---------------- -->
     
         <div class="page__description">
     
-            <div class="titulo">Photography & <br> video</div>
-            <div class="description">
-                I have been always fascinated by photography and video. How every person sees the world differently and learns how to portray that in their work.
+            <h1>Photography</h1>
+            <p>
+                I have been always fascinated by photography and video. 
+                How every person sees the world differently and learns 
+                how to portray that in their work.
                 <br>
-                <br>Understanding what triggers us to tell stories using pictures, selecting the elements on them and playing with light? In the end, everything is about the light. 
-            </div>
-    
+                <br>
+                Understanding what triggers us to tell stories using 
+                pictures, selecting the elements on them and playing with 
+                light? In the end, everything is about the light. 
+            </p>
         </div>
     
     
@@ -94,24 +62,32 @@
     
             <div class="grid_responsive">
         
-                <a href="pages_photography/coimbracor.html">
+                <a href="pages_photography/photography-coimbracor.html">
                 <div class="item item--effect" style="background-image: url(img/fotografia/coimbra/gato-icon.jpg);">
-                    <div class="item__text"><p class="nombre">[2021] A cor de coimbra.</p></div>
+                    <div class="item__text">
+                        <p class="nombre">A cor de coimbra.</p>
+                        <p class="nombre">[2021]</p>
+                    </div>
                 </div>
                 </a>
      
             
     
-                <a href="pages_photography/quien-habla.html">
+                <a href="pages_photography/photography-quien-habla.html">
                 <div class="item" style="background-image: url(img/fotografia/quienhabla/quienhablaicon.jpg);">
-                    <div class="item__text"><p class="nombre">[2020] Quien habla de ti.</p></div>
+                    <div class="item__text">
+                        <p class="nombre">Quien habla de ti.</p>
+                        <p class="nombre">[2020]</p>
+                    </div>
                 </div>
                 </a>
 
 
                 <a href="https://vsco.co/dngea/gallery" target="_blank">
                 <div class="item" style="background-image: url(img/fotografia/gallery_icon.jpg);">
-                    <div class="item__text"><p class="nombre">Gallery.</p></div>   
+                    <div class="item__text">
+                        <p class="nombre">Gallery.</p>
+                    </div>   
                 </div>
                 </a>
                
@@ -128,6 +104,36 @@
     
         
     </div>
+
+    <!-- ADD Footer -->
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.instagram.com/dnpgzl_/?hl=es" target="_blank">
+        <img src="img/instagram.png" width="38px" height="38px">
+            </a>
+        </div>
+        
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/daniel-gea-palenzuela-389a02177/" target="_blank">
+        <img src="img/linkedin.png" width="38px" height="38px">
+            </a>
+        </div>
+        
+        <div class="socialmedia">
+            <a href="https://github.com/dngea" target="_blank">
+        <img src="img/github.png" width="38px" height="38px">
+            </a>
+        </div>
+    
+        <div class="socialmedia">
+          <a href="https://vsco.co/dngea/gallery" target="_blank">
+      <img src="img/vsco.png" width="38px" height="38px">
+          </a>
+      </div>
+    
+      <button id="contactButton">Contact Me</button>
+        
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

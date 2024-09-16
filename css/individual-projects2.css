@@ -1,0 +1,198 @@
+
+
+
+h2{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+h3{
+    margin: 1rem 0;
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+p{
+    padding-top: 0;   
+}
+
+
+.contenedor{
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+
+/* Project Introduction Styling */
+.project-introduction {
+    margin: 0 auto;
+    margin-bottom: 2vh;
+}
+
+/* Center the header title */
+.project-introduction__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.project-introduction__header h3{
+    font-style: italic;
+}
+
+
+/* Styling for the content container with Grid */
+.project-introduction__content {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Two equal columns */
+    gap: 2rem; /* Space between columns */
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Columns for technical and summary */
+.project-introduction__technical, 
+.project-introduction__summary {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.project-introduction__technical a:hover > p {
+    color: #6e6e6e; /* Change text color on hover */
+}
+
+.hero {
+    background-size: contain; /* Asegura que la imagen cubra todo el área del div */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Usa el ancho completo de la ventana del navegador */
+    height: 90vh; /* Ajusta la altura de tu hero section */
+    margin: 5rem 0;
+    position: relative; /* Asegura que el contenedor pueda posicionar sus hijos correctamente */
+    overflow: hidden; /* Opcional: evita que el contenido se desborde del contenedor */
+    left: 50%; /* Moverlo hacia la izquierda */
+    right: 50%; /* Alinearlo hacia la derecha */
+    margin-left: -50vw; /* Corrección para moverlo fuera del contenedor */
+    margin-right: -50vw; /* Asegura que también se estire hacia la derecha */
+}
+
+
+.methodology{
+    background-color: var(--black);
+    width: 100vw; /* Ocupar el 100% del viewport */
+    height: 50vh;
+    position: relative; /* Para moverlo respecto a su contenedor */
+    left: 50%; /* Moverlo hacia la izquierda */
+    right: 50%; /* Alinearlo hacia la derecha */
+    margin-left: -50vw; /* Corrección para moverlo fuera del contenedor */
+    margin-right: -50vw; /* Asegura que también se estire hacia la derecha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.methodology h2{
+    color: var(--background);
+}
+.methodology__photo{
+    width: 40vh;
+}
+
+
+.case-study{
+    margin: 5rem 0;
+    border: 3px var(--primary) solid;
+}
+.case-study__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px var(--primary) solid;
+}
+
+.case-study__body{
+    display: grid;
+    grid-template-columns: 2fr 5fr; /* Two equal columns */
+    gap: 2rem; /* Space between columns */
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    text-align: left;
+}
+.case-study__body--summary, .case-study__body--content{
+    padding: 0 2vw;
+}
+.case-study__body--content h2{
+    margin-top: 1rem;
+}
+.case-study__body--content h3{
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.case-study__body--summary h3{
+    margin-top: 2rem;
+}
+
+.case-study__body--content ul {
+    list-style-type: disc; /* Ensures bullets are used for the list items */
+    padding-left: 2rem; /* Adds some space to the left of the list */
+    margin: 2rem; /* Removes default margin */
+}
+
+.case-study__body--content li {
+    margin-bottom: 1rem; /* Adds space between list items */
+    line-height: 1.5rem;
+    font-family: var(--paragraph-font);
+    font-size: 1.25rem;
+    color: var(--black);
+    letter-spacing: 0.15rem;
+    text-align:left;
+    font-weight:400;
+}
+
+
+@media (max-width: 1100px){
+    .hero{
+        background-size: cover; /* Asegura que la imagen cubra todo el área del div */
+        height: 75vh;
+    }
+    
+}
+@media (max-width: 672px){
+    .project-introduction__header{
+        align-items: start;
+        justify-content: left;
+    }
+    
+    .project-introduction__content {
+        grid-template-columns: 1fr; /* Make it one column */
+    }
+
+    /* Reorder the grid items so the second column comes first */
+    .project-introduction__technical {
+        order: 2; /* Move the technical section below */
+        width: 100%; /* Make it take 100% width */
+    }
+
+    .project-introduction__summary {
+        order: 1; /* Move the summary section above */
+        width: 100%; /* Make it take 100% width */
+    }
+
+    .hero{
+        height: 50vh;
+    }
+    .contain{
+        background-size: contain;
+    }
+
+    .case-study__body{
+        grid-template-columns: 1fr; /* Make it one column */
+    }
+    .case-study__body--summary{
+        order: 1;
+    }
+    .case-study__body--content{
+        order: 2;
+    }
+}
+

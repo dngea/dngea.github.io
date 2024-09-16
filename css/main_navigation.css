@@ -1,9 +1,19 @@
 :root{
-    --dark: #1A1918;
-    --primary: #CA9111;
-    --secondary: #D5D3C4;
-    --background: #FFF4E9;
+    --dark: #000000;
+    --primary: #A44200;
+    --secondary: #ffffff;
+    --background: #FFEFDF;
+
+    --main-font: 'IBM Plex sans', system-ui;
+    --paragraph-font: 'Work Sans', system-ui;
+
+    --max-width: 1200px;
   }
+
+html {
+    font-size: 12px; /* Ajusta según tus necesidades */
+    font-family: var(--main-font);
+}
 
 a{
     text-decoration: none;
@@ -11,16 +21,16 @@ a{
 }
 
 .nav{
-    height: 8rem;
+    height: 10vh;
     width: 100%;
-    font-size: 1.1rem;
-    background-color: #1A1918;
-    color: #D5D3C4;
+    background-color: var(--dark);
+    color: var(--background);
     z-index: 1;
     padding: 0 5rem;
+    border-bottom: var(--background) 0.1rem solid;
 }
 .nav--width{
-    max-width: 1920px;
+    max-width: var(--max-width);
     height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -28,49 +38,52 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-
 .nav .nav__ul{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .nav .nav__ul .nav__li{
     height: 100%;
-    width: 10rem;
+    width: 12rem;
     cursor: pointer;
     list-style: none;
-    font-family: 'DM mono';
+    font-family: var(--main-font);
+    color: var(--background);
+    font-size: 1rem;
+    font-weight:600;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
-    margin-right: 1rem;
-}
-.nav .nav__ul .nav__li:last-of-type{
-    margin-right: 0;
-    width: 7rem;
+    padding: 0;
+    margin-right: 0.1rem;
 }
 
 .nav .nav__ul .nav__li:hover{
-    background-color: #CA9111;
+    background-color: var(--primary);
     transition: 0.3s;
     height: 100%;
 }
 
 .nav .nav__ul .nav__li a {
     text-decoration: none;
-    color: black;
+    color: var(--dark);
 }
 
 .logo{
     height: 100%;
+    font-family: var(--main-font);
     font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    color: var(--primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'DM mono';
 }
 .logo:hover{
     cursor: pointer;
@@ -86,6 +99,10 @@ a{
 
 /* OVERLAY MENUS */
 
+.block{
+    display: block;
+}
+
 .burger{
     visibility: hidden;
     display: none;
@@ -94,7 +111,11 @@ a{
     visibility: hidden;
     display: none;
     font-size: 1.5rem;
-    color: var(--secondary);
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
 }
 
 .overlay{
@@ -124,19 +145,19 @@ a{
 .overlay-content .nav__li{
     width: 100%;
     padding: 2.5rem 6rem;
-    font-family: "DM Mono";
+    font-family: var(--main-font);
     font-size: 1.5rem;
     color: var(--secondary);
 }
 .overlay-content .nav__li:hover{
-    color: #CA9111;
+    color: var(--primary);
 }
 .overlay .closebtn {
-    width: 40px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     position: absolute;
-    top: 2.2rem;
-    right: 3rem;
+    top: 2.7rem;
+    right: 4rem;
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.788);
     z-index: 2;
@@ -182,11 +203,11 @@ a{
    .burger{
         visibility: visible;
         display: block;
-        width: 40px;
-        height: 30px;
+        width: 30px;
+        height: 20px;
         position: absolute;
-        top: 1.1rem;
-        right: 1.5rem;
+        top: 1.35rem;
+        right: 2rem;
         cursor: pointer;
         z-index: 3;
    }
@@ -214,11 +235,15 @@ a{
    }
    .logo--overlay{
         visibility: visible;
-        display: block;
+        display: flex;
         position: absolute;
-        top: 2.6rem;
+        top: 3rem;
         left: 3rem;
         z-index: 4;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 0.25rem;
+        color: var(--primary);
    }
 }
 
