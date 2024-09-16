@@ -108,7 +108,7 @@ a{
 
 .grid_responsive{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 
@@ -176,10 +176,6 @@ a{
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 1.5rem;
-    font-style: italic;
-}
-
-.item:hover .item__text .italic{
     font-style: italic;
 }
 
@@ -395,7 +391,7 @@ footer {
 
 
 
-/* RESPONSIVE DESIGN: Primero de mayor a menor en estraategia de "max". */
+/* RESPONSIVE DESIGN: Primero de mayor a menor en estrategia de "max". */
 @media (max-width: 1300px){
     .contenedor{
         padding: 5vw;
@@ -428,8 +424,8 @@ footer {
 
 @media (max-width: 672px) {
     .contenedor{
-        margin-top: 10vh;
         padding: 0.15rem;
+        margin-top: 10vh;
     }
     h1{
         font-size: 4rem;
@@ -463,16 +459,128 @@ footer {
         height: 38px;
       }
       footer button{
-        width: 100%;
+        width: 70%;
         margin-top:8rem;
         margin:0;
       }
+
+      .contenedor-about{
+        margin-top: 10vh;
+      }
+
+      .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna para la disposición vertical */
+        grid-template-rows: auto auto; /* Ajusta las filas automáticamente */
+    }
+
+    .about__img {
+        order: 1; /* Coloca la imagen primero */
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__img img{
+        
+        height: 100%
+    };
+
+    .about__info {
+        order: 2; /* Coloca el texto después de la imagen */
+    }
+    .resume{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
+    
+
 }
 
-@media (max-width: 400px){}
-.item{ 
-    width:100%;
+@media (max-width: 500px){
+    .grid_responsive{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item{ 
+        position:static;
+        width: 80vw;
+        height: auto;
+        margin:0;
+        background-repeat:no-repeat;
+        object-fit:contain;
+        background-position: center center;
+        filter: brightness(0.9); /* Combina ambos filtros */
+        overflow: visible; /* Asegura que no haya desbordamiento */
+        margin-bottom: 5rem;
+    }
+    .item:hover{
+        background-size: 100%;
+        transition: 0.3s ease-in-out;
+        filter: brightness(1.25);
+    }
+    
+    .item__text{
+        position:static;
+        padding: 0;
+        width: 100%;
+        height: 5rem;
+        z-index: 1;
+        transform: translateY(280%);
+        transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Añade transición al cambio de altura */
+    }
+    
+    .item .item__text::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        background-color: #00000000; /* El color de fondo */
+        opacity: 0; /* Opacidad por defecto */
+        transition: opacity 0.3s ease-in-out;
+        z-index: -1; /* Coloca el fondo detrás del texto */
+    }
+    
+    .item:hover .item__text::before {
+        opacity: 0.8; /* Aplica opacidad al fondo en hover */
+    }
+    
+    .item__text p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: var(--background);
+        background-color: var(--primary);
+        backface-visibility: 0.5;
+        transition: font-size 0.3s ease-in-out;
+        padding-left: 1rem;
+    }
+    .item:hover .item__text p{
+        font-size:1rem; 
+    }
+    .item .item__text .thin{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 0;
+        font-style: italic;
+    }
+    
+    .item:hover .item__text .thin{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 0;
+        font-style: italic;
+    }
+    .translateDown{
+        transform: translateY(480%);
+    }
 }
+
 
 
 
