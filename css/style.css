@@ -23,6 +23,7 @@ body {
 }
 
 .body__container{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,5 +277,32 @@ footer button{
   }
   .container{
     padding: 3rem 1.5rem;
+  }
+}
+
+
+@media (max-width: 600px){
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+footer .socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:1rem;
+    opacity: 0.9;
+    transition: 0.2s;
+  }
+  footer .socialmedia img{
+    width: 38px;
+    height: 38px;
+  }
+  footer button{
+    width: 65%;
+    margin-top:8rem;
+    margin:0;
   }
 }

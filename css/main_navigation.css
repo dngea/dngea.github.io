@@ -195,6 +195,10 @@ a{
 
     .nav{
         padding: 0 2.5rem;
+        background-color: var(--dark);
+        position: fixed; /* Fija el header para que se quede en la parte superior */
+        top: 0;
+        left: 0;
     }
     .nav--width{
         position: relative;
