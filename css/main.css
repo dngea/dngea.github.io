@@ -514,7 +514,7 @@ footer {
         background-position: center center;
         filter: brightness(0.9); /* Combina ambos filtros */
         overflow: visible; /* Asegura que no haya desbordamiento */
-        margin-bottom: 5rem;
+        margin-bottom: 8rem;
     }
     .item:hover{
         background-size: 100%;
@@ -528,7 +528,7 @@ footer {
         width: 100%;
         height: 5rem;
         z-index: 1;
-        transform: translateY(280%);
+        transform: translateY(320%);
         transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Añade transición al cambio de altura */
     }
     
@@ -579,6 +579,9 @@ footer {
     .translateDown{
         transform: translateY(480%);
     }
+
+    
+      
 }
 
 
