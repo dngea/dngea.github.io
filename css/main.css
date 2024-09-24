@@ -32,7 +32,7 @@ body{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family: var(--main-font);
     color: var(--black);
@@ -40,27 +40,35 @@ h1{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: bold;
     font-family: var(--main-font);
     color: var(--black);
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
 }
 
 h3{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: var(--main-font);
     color: var(--black);
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--main-font);
+    color: var(--black);
+    letter-spacing: 0.15rem;
 }
 
 p{
     font-family: var(--paragraph-font);
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--black);
-    letter-spacing: 0.15rem;
-    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.75rem;
     text-align:left;
     padding-top: 2rem;
     font-weight:400;
@@ -71,6 +79,9 @@ a{
     list-style: none;
 }
 
+.italic{
+    font-style: italic;
+}
 
 
 /* BODY--------------- */
@@ -89,15 +100,15 @@ a{
     display: flex;
     flex-direction: column;
     justify-content:start;
-    padding: 2rem;
-    margin:0;
+    padding: 2rem 2rem;
+    margin:0 1rem;
 }
 
 .page__showProjects{
     width: 65%;
     min-width: 0;
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 0;
     margin:0;
 }
 
@@ -106,120 +117,79 @@ a{
 }
 
 
-.grid_responsive{
+.grid_responsive {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    gap: 0; /* Sin márgenes entre las tarjetas */
+    width: 100%; /* Ocupar el 100% del contenedor */
+    max-width: 1200px; /* Limitar el ancho máximo */
 }
 
 
-.item{ 
+.card {
     position: relative;
-    /* border: 2px solid black; */
-    min-width: 15rem;
-    min-height: 25rem;
-    background-repeat:no-repeat;
-    object-fit:cover;
-    background-position: center center;
-    background-size: cover;
-    margin:0rem;
-    filter: brightness(0.8) grayscale(1); /* Combina ambos filtros */
-    overflow: hidden; /* Asegura que no haya desbordamiento */
-}
-.item:hover{
-    background-size: 150%;
-    transition: 0.3s ease-in-out;
-    filter: brightness(1.25);
+    transition: 0.3s;
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    padding-bottom: 100%; /*Mantener un aspecto cuadrado*/
+    overflow: hidden; /* Para que el contenido no desborde */
+    background-color: #e4e4e4;
 }
 
-
-.item__text{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    padding: 3rem;
-    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Añade transición al cambio de altura */
-    z-index: 1;
-}
-
-.item .item__text::before {
-    content: '';
-    position: absolute;
+.card img {
+    position: absolute; /* Posicionar la imagen en la parte superior */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary); /* El color de fondo */
-    opacity: 0; /* Opacidad por defecto */
-    transition: opacity 0.3s ease-in-out;
-    z-index: -1; /* Coloca el fondo detrás del texto */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacios extra debajo de la imagen */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, 
+                transform 0.3s ease;
 }
 
-.item:hover .item__text::before {
-    opacity: 0.8; /* Aplica opacidad al fondo en hover */
+.card__container {
+    position: absolute; /* Para superponer el texto sobre la imagen */
+    top: 0; /* Coloca el texto en la parte superior */
+    left: 0;
+    right: 0;
+    bottom: 0; /* Asegura que el texto cubra toda la tarjeta */
+    background: #a44200df; /* Fondo oscuro para el texto */;
+    color: var(--primary);
+    display: flex; /* Para centrar el texto */
+    flex-direction: column; /* Centra el texto en vertical */
+    justify-content: center; /* Centra el texto en vertical */
+    align-items: start; /* Centra el texto en horizontal */
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Inicialmente oculto */
+    padding: 4rem; /* Espaciado alrededor del texto */
 }
 
-.item__text p{
-    font-size: 0rem;
-    font-weight: 600;
+.card__container *{
+    color: var(--background);
+    padding: 0.5rem 0;
+}
+.card__container p{
+    font-size: 12px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    color: var(--background);
-    
-    transition: font-size 0.3s ease-in-out;
-}
-.item:hover .item__text p{
-    font-size:1.5rem; 
 }
 
-.item:hover .item__text .thin{
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-top: 1.5rem;
-    font-style: italic;
+.card__container h4{
+    margin-top: 2rem;
+
 }
 
-
-
-
-.info{
-    width: 0%;
-    height: 100%;
-    background: rgb(30,30,30);
-    transition: 1s ease;
-}
-.infohover{
-    width: 100%;
-    background-color: rgb(120,120,120);
-    transition: 1s ease;
-    border-bottom:2px solid black;
+.card:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.3); /* Aumenta la imagen un 5% al hacer hover */
 }
 
-.dn{
-    position: absolute;
-    top:-1px;
-    right: 2%;
-    width: 50px;
-    height: 40px;
-    opacity: 0.6;
-    transition: 0.6s;
-    cursor: pointer;
-}
-.dn:hover{
-    opacity: 1;
-}
-.dn img{
-    position: absolute;
-    width: 50px;
-    height: 40px;
+.card:hover .card__container {
+    opacity: 1; /* Muestra el texto al hacer hover */
 }
 
-.grid--bottom{
-    background-position: center bottom;
-}
-.grid--top{
-    background-position: center top;
-}
 
 
 
@@ -378,15 +348,36 @@ footer {
     opacity: 0.6;
   }
   footer button{
-    background-color: #A44200; /* Highlight color */
-    color: var(--background);
+    background-color: #a4420000; /* Highlight color */
+    color: var(--primary);
     border: none;
-    padding: 1rem 3rem;
+    padding: 1.25rem;
     font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 2rem;
+    margin-left: 0rem;
+    transition: all 0.3s ease;
   }
+  footer button:hover{
+    background-color: #a4420000; /* Highlight color */
+    color: var(--primary);
+    opacity: 0.7;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -394,50 +385,65 @@ footer {
 /* RESPONSIVE DESIGN: Primero de mayor a menor en estrategia de "max". */
 @media (max-width: 1300px){
     .contenedor{
-        padding: 5vw;
+        width: 90%;
     }
 }
 
 @media (max-width: 1100px){
     .contenedor{
-        width: 100%;
+        width: 80%;
         flex-direction: column;
     }
     .page__description{
         width: 100%;
+        padding: 0;
         margin-bottom: 5rem;
-        margin-right: 0;
+        margin: 0;
     }
     .page__showProjects{
         width: 100%;
     }
-    .item{
-        margin: 0 0 0;
+    .card__container p{
+        line-height: 1.25rem;
     }
-
-    .item .item__text .nombre{
-        font-size: 1.5rem;
-        padding: 1.5rem;
-    } 
    
 }
 
 @media (max-width: 672px) {
     .contenedor{
-        padding: 0.15rem;
-        margin-top: 10vh;
+        width: 80%;
+        margin-top: 5vh;
     }
-    h1{
-        font-size: 4rem;
-    }
-    h2{
-        font-size: 2.5rem;
+    .grid_responsive {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
 
-    .item{ 
-        width:90%;
-        min-height: 25rem;
-        margin: 0 auto;
+    .card__container {
+        position: static; /* Coloca el texto bajo la imagen en móviles */
+        opacity: 1; 
+        background: var(--primary);
+        padding: 15px; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: start;
+        justify-content: center;
+    }
+    .card{
+        padding-bottom: 0%;
+        margin-bottom: 15%;
+        border-radius: 0px;
+    }
+
+    .card img {
+        position: relative; /* Cambio a posición relativa en móviles */
+        height: auto; /* Altura automática para mantener proporciones */
+        max-height: 350px;
+        min-height: 300px;
+        object-fit: cover; /* Mantiene la proporción de la imagen */
+        filter: grayscale(0%);
+    }
+    .card:hover img{
+        transform: scale(1); /* Aumenta la imagen un 5% al hacer hover */
     }
 
     footer{
@@ -454,21 +460,21 @@ footer {
         opacity: 0.9;
         transition: 0.2s;
       }
-      footer .socialmedia img{
+    footer .socialmedia img{
         width: 38px;
         height: 38px;
       }
-      footer button{
+    footer button{
         width: 70%;
         margin-top:8rem;
         margin:0;
       }
 
-      .contenedor-about{
+    .contenedor-about{
         margin-top: 10vh;
-      }
+    }
 
-      .about {
+    .about {
         grid-template-columns: 1fr; /* Cambia a una sola columna para la disposición vertical */
         grid-template-rows: auto auto; /* Ajusta las filas automáticamente */
     }
@@ -493,95 +499,6 @@ footer {
     }
 
 
-    
-
-}
-
-@media (max-width: 500px){
-    .grid_responsive{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .item{ 
-        position:static;
-        width: 80vw;
-        height: auto;
-        margin:0;
-        background-repeat:no-repeat;
-        object-fit:contain;
-        background-position: center center;
-        filter: brightness(0.9); /* Combina ambos filtros */
-        overflow: visible; /* Asegura que no haya desbordamiento */
-        margin-bottom: 8rem;
-    }
-    .item:hover{
-        background-size: 100%;
-        transition: 0.3s ease-in-out;
-        filter: brightness(1.25);
-    }
-    
-    .item__text{
-        position:static;
-        padding: 0;
-        width: 100%;
-        height: 5rem;
-        z-index: 1;
-        transform: translateY(320%);
-        transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Añade transición al cambio de altura */
-    }
-    
-    .item .item__text::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 5rem;
-        background-color: #00000000; /* El color de fondo */
-        opacity: 0; /* Opacidad por defecto */
-        transition: opacity 0.3s ease-in-out;
-        z-index: -1; /* Coloca el fondo detrás del texto */
-    }
-    
-    .item:hover .item__text::before {
-        opacity: 0.8; /* Aplica opacidad al fondo en hover */
-    }
-    
-    .item__text p{
-        font-size: 1rem;
-        font-weight: 400;
-        margin: 0;
-        padding: 0;
-        color: var(--background);
-        background-color: var(--primary);
-        backface-visibility: 0.5;
-        transition: font-size 0.3s ease-in-out;
-        padding-left: 1rem;
-    }
-    .item:hover .item__text p{
-        font-size:1rem; 
-    }
-    .item .item__text .thin{
-        font-size: 1rem;
-        font-weight: 200;
-        margin-top: 0;
-        font-style: italic;
-    }
-    
-    .item:hover .item__text .thin{
-        font-size: 1rem;
-        font-weight: 200;
-        margin-top: 0;
-        font-style: italic;
-    }
-    .translateDown{
-        transform: translateY(480%);
-    }
-
-    
-      
 }
 
 

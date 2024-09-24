@@ -11,7 +11,7 @@
   }
 
 html {
-    font-size: 12px; /* Ajusta según tus necesidades */
+    font-size: 14px; /* Ajusta según tus necesidades */
     font-family: var(--main-font);
 }
 
@@ -54,7 +54,7 @@ a{
     list-style: none;
     font-family: var(--main-font);
     color: var(--background);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight:600;
     display: flex;
     justify-content: center;
@@ -177,10 +177,13 @@ a{
     .nav{
         padding: 0 0 0 2rem;
     }
+    .nav .nav__ul{
+        margin-right: 1rem;
+    }
     .nav .nav__ul .nav__li{
         width: 8rem;
         padding: 0.5rem;
-        margin-right: 1.5rem;
+        margin-right: 0rem;
     }
     .overlay{
         max-width: 960px;
@@ -253,4 +256,11 @@ a{
 
 .current-page{
     background-color: var(--primary);
+}
+
+@media (max-width: 500px) {
+
+    html {
+        font-size: 12px;
+    }
 }
