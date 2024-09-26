@@ -43,6 +43,9 @@ function loadHeader() {
           console.log("Header data loaded"); // Verificar si se recibe la respuesta
           document.getElementById('header').innerHTML = data;
           highlightCurrentPage(); // Llamar a la función para resaltar la página actual después de cargar el header
+
+          // Inicializar eventos de navegación aquí
+          initNavEvents(); 
       })
       .catch(error => console.error('Error al cargar el header:', error));
 }
@@ -106,11 +109,23 @@ function setupContactButton() {
   }
 }
 
+// Función que inicializa los eventos de navegación
+function initNavEvents() {
+  const navItems = document.querySelectorAll('.nav__li');
+
+  navItems.forEach(item => {
+      item.addEventListener('click', () => {
+          const link = item.querySelector('a');
+          window.location.href = link.href; // Redirigir a la URL del enlace
+      });
+  });
+}
+
 
 
 // Llamar a la función para cargar el header y footer cuando la página cargue
 document.addEventListener('DOMContentLoaded', function() {
   loadHeader();
   loadFooter();
-  setupContactButton();
+  setupContactButton(); 
 });

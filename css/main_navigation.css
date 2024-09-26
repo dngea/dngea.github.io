@@ -2,7 +2,8 @@
     --dark: #000000;
     --primary: #A44200;
     --secondary: #ffffff;
-    --background: #FFEFDF;
+    --background: #FFF6EE;
+    /* --background: #FFF4E9; */
 
     --main-font: 'IBM Plex sans', system-ui;
     --paragraph-font: 'Work Sans', system-ui;
@@ -49,13 +50,13 @@ a{
 
 .nav .nav__ul .nav__li{
     height: 100%;
-    width: 12rem;
+    width: 10rem;
     cursor: pointer;
     list-style: none;
     font-family: var(--main-font);
     color: var(--background);
     font-size: 0.8rem;
-    font-weight:600;
+    font-weight:500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,6 +204,9 @@ a{
         top: 0;
         left: 0;
     }
+    ul{
+        list-style: none;
+    }
     .nav--width{
         position: relative;
         justify-content: center;
@@ -261,6 +265,6 @@ a{
 @media (max-width: 500px) {
 
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 }

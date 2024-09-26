@@ -1,6 +1,7 @@
-
-
-
+html, body{
+    position:relative;
+    z-index: 3;
+}
 h2{
     margin: 2rem 0;
     font-size: 2.5rem;
@@ -10,6 +11,10 @@ h3{
     color: var(--primary);
     font-size: 1.25rem;
 }
+h4{
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+}
 p{
     padding-top: 0;   
 }
@@ -17,31 +22,50 @@ p{
 
 .contenedor{
     flex-direction: column;
+    width: 100%;
+    padding: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-1000{
+    flex-direction: column;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 
+
+
 /* Project Introduction Styling */
-.project-introduction {
-    margin: 0 auto;
+.project {
+    margin: 2rem auto;
     margin-bottom: 2vh;
 }
 
 /* Center the header title */
-.project-introduction__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+.project__header {
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
-.project-introduction__header h3{
-    font-style: italic;
+.project__header h1{
+    width: 100%;
+    margin-bottom:1.5rem ;
+}
+.date{
+    color: var(--primary);
+    padding: 0 1rem 0 0;
+}
+.location{
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0 1rem;
 }
 
 
 /* Styling for the content container with Grid */
-.project-introduction__content {
+.project__content {
     display: grid;
     grid-template-columns: 2fr 3fr; /* Two equal columns */
     gap: 2rem; /* Space between columns */
@@ -50,75 +74,149 @@ p{
 }
 
 /* Columns for technical and summary */
-.project-introduction__technical, 
-.project-introduction__summary {
+.technical-rider, 
+.summary {
     padding: 1rem;
     border-radius: 8px;
 }
 
-.project-introduction__technical a:hover > p {
+.technical-rider a:hover > p {
     color: #6e6e6e; /* Change text color on hover */
 }
 
-.hero {
-    background-size: contain; /* Asegura que la imagen cubra todo el área del div */
-    background-position: center; /* Centra la imagen dentro del contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    width: 100vw; /* Usa el ancho completo de la ventana del navegador */
-    height: 90vh; /* Ajusta la altura de tu hero section */
-    margin: 5rem 0;
-    position: relative; /* Asegura que el contenedor pueda posicionar sus hijos correctamente */
-    overflow: hidden; /* Opcional: evita que el contenido se desborde del contenedor */
-    left: 50%; /* Moverlo hacia la izquierda */
-    right: 50%; /* Alinearlo hacia la derecha */
-    margin-left: -50vw; /* Corrección para moverlo fuera del contenedor */
-    margin-right: -50vw; /* Asegura que también se estire hacia la derecha */
-}
 
 
-.methodology{
-    background-color: var(--black);
-    width: 100vw; /* Ocupar el 100% del viewport */
-    height: 50vh;
-    position: relative; /* Para moverlo respecto a su contenedor */
-    left: 50%; /* Moverlo hacia la izquierda */
-    right: 50%; /* Alinearlo hacia la derecha */
-    margin-left: -50vw; /* Corrección para moverlo fuera del contenedor */
-    margin-right: -50vw; /* Asegura que también se estire hacia la derecha */
+
+
+
+
+/* CAROUSEL HERO */
+
+.carousel-container {
+    width: 100%; /* Ocupa el ancho completo del viewport */
+    height: 75vh; /* Altura ajustada */
+    position: relative;
+    overflow: hidden; /* Asegura que solo se vea una imagen */
+    margin: 8rem 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .carousel-frame {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Solo una imagen visible a la vez */
+    position: relative;
+  }
+  
+  .carousel-images {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.methodology h2{
+    height: 100%;
+    transition: transform 0.5s ease; /* Animación suave para el desplazamiento */
+  }
+  
+  .carousel-images img {
+    width: calc(100% / 4); /* Asigna a cada imagen el 25% del ancho, ajusta el número 4 según el total de imágenes */
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
     color: var(--background);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+
+
+
+
+
+
+.parallex {
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /* Ocupar el 100% del viewport */
+    height: 40vh;
+    position: relative;
+    top:0;
+    left: 0;
+    overflow: hidden; /* Para recortar cualquier cosa fuera de este contenedor */
+    clip-path: inset(0); /* Recorta cualquier contenido que salga del contenedor */
+    z-index: 0;
 }
-.methodology__photo{
-    width: 40vh;
+
+.parallex-container {
+    position: fixed; /* Mantener el texto fijo en la pantalla */
+    top: 50%; /* Alineación vertical */
+    left: 50%; /* Alineación horizontal */
+    transform: translate(-50%, -80%); /* Centrar el contenido */
+    text-align: center;
+    z-index: 1; /* Mantener el texto por encima de la imagen */
 }
+.parallex-container h2{
+    color:var(--background);
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .case-study{
     margin: 5rem 0;
-    border: 3px var(--primary) solid;
+    /* border: 3px var(--primary) solid; */
 }
 .case-study__header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px var(--primary) solid;
+    margin: 0 auto;
+}
+.case-study__header h2{
+    padding: 0 2rem;
+    white-space: nowrap;
+}
+.divider{
+    flex-grow: 1; /* Hace que las líneas crezcan para llenar el espacio */
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 1px solid var(--primary); /* Línea superior */
+    margin: 0 10px; /* Espacio entre el texto y las líneas */
+    opacity: 0.15;
 }
 
 .case-study__body{
     display: grid;
-    grid-template-columns: 2fr 5fr; /* Two equal columns */
+    grid-template-columns: 1fr 4fr; /* Two equal columns */
     gap: 2rem; /* Space between columns */
     margin: 0 auto;
-    padding: 3rem 1rem;
     text-align: left;
+    padding: 2rem;
 }
 .case-study__body--summary, .case-study__body--content{
-    padding: 0 2vw;
+    /* background-color: aqua; */
 }
 .case-study__body--content h2{
     margin-top: 1rem;
@@ -150,32 +248,76 @@ p{
 }
 
 
+
+
+.hero {
+    background-size: contain; /* Asegura que la imagen cubra todo el área del div */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Usa el ancho completo de la ventana del navegador */
+    height: 90vh; /* Ajusta la altura de tu hero section */
+    margin: 5rem 0;
+    position: relative; /* Asegura que el contenedor pueda posicionar sus hijos correctamente */
+    overflow: hidden; /* Opcional: evita que el contenido se desborde del contenedor */
+    left: 50%; /* Moverlo hacia la izquierda */
+    right: 50%; /* Alinearlo hacia la derecha */
+    margin-left: -50vw; /* Corrección para moverlo fuera del contenedor */
+    margin-right: -50vw; /* Asegura que también se estire hacia la derecha */
+}
+
+
+
+
+
+
+
 @media (max-width: 1100px){
     .hero{
         background-size: cover; /* Asegura que la imagen cubra todo el área del div */
         height: 75vh;
     }
-    
 }
+
 @media (max-width: 672px){
-    .project-introduction__header{
+    .contenedor{
+        margin-top: 8rem;
+        width: 95%;
+    }
+    .container-1000{
+        width: 95%;
+    }
+    .project{
+        margin-top: 0rem;
+    }
+    .project__header{
         align-items: start;
         justify-content: left;
     }
     
-    .project-introduction__content {
+    .project__content {
         grid-template-columns: 1fr; /* Make it one column */
     }
 
     /* Reorder the grid items so the second column comes first */
-    .project-introduction__technical {
+    .technical-rider{
         order: 2; /* Move the technical section below */
         width: 100%; /* Make it take 100% width */
     }
 
-    .project-introduction__summary {
+    .summary {
         order: 1; /* Move the summary section above */
         width: 100%; /* Make it take 100% width */
+    }
+
+    .methodology__photo{
+        width: 25vh;
+    }
+    .carousel-container{
+        height: 50vh;
+    }
+
+    .parallex{
+        width: 100%;
     }
 
     .hero{
@@ -188,11 +330,31 @@ p{
     .case-study__body{
         grid-template-columns: 1fr; /* Make it one column */
     }
+
+    h2{margin: 0;}
+    
+    
     .case-study__body--summary{
         order: 1;
     }
     .case-study__body--content{
         order: 2;
     }
+    .divider{
+        width: 4rem;
+    }
+}
+
+@media (max-width: 460px) {
+   .divider{
+        display: none;
+   }
+   .case-study__header h2{
+    white-space:unset;
+    }
+    .parallex-container h2{
+        white-space: unset;
+    }
+
 }
 
