@@ -150,7 +150,7 @@ a{
     font-size: 1.5rem;
     color: var(--secondary);
 }
-.overlay-content .nav__li:hover{
+.overlay-content .nav__li a:hover{
     color: var(--primary);
 }
 .overlay .closebtn {
@@ -247,7 +247,7 @@ a{
    .logo--overlay{
         visibility: visible;
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 3rem;
         left: 3rem;
         z-index: 4;

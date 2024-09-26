@@ -146,13 +146,13 @@ p{
 
 
 .parallex {
-    min-height: 400px; 
+    min-height: 350px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%; /* Ocupar el 100% del viewport */
-    height: 40vh;
+    /* height: 35vh; */
     position: relative;
     top:0;
     left: 0;
@@ -343,6 +343,12 @@ p{
     .divider{
         width: 4rem;
     }
+}
+
+@media (max-width: 500px) {
+   .parallex{
+    min-height: 8vh;
+   }
 }
 
 @media (max-width: 460px) {
