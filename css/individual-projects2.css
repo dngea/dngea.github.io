@@ -4,15 +4,12 @@ html, body{
 }
 h2{
     margin: 2rem 0;
-    font-size: 2.5rem;
 }
 h3{
     margin: 1rem 0;
     color: var(--primary);
-    font-size: 1.25rem;
 }
 h4{
-    font-size: 1rem;
     margin: 1.5rem 0 0.5rem;
 }
 p{
@@ -104,6 +101,7 @@ p{
     overflow: hidden; /* Asegura que solo se vea una imagen */
     margin: 8rem 0;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    background-color: #6e6e6e;
   }
   
   .carousel-frame {
@@ -132,7 +130,7 @@ p{
     background-color: rgba(0, 0, 0, 0.1);
     color: var(--background);
     border: none;
-    padding: 1rem;
+    padding: 5rem 1.25rem;
     cursor: pointer;
     z-index: 2;
   }
@@ -150,33 +148,34 @@ p{
 
 
 
-.parallex {
-    min-height: 350px; 
+/* Style for the parallax section */
+.parallax {
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%; /* Ocupar el 100% del viewport */
-    /* height: 35vh; */
-    position: relative;
-    top:0;
-    left: 0;
-    overflow: hidden; /* Para recortar cualquier cosa fuera de este contenedor */
-    clip-path: inset(0); /* Recorta cualquier contenido que salga del contenedor */
-    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.parallex-container {
-    position: fixed; /* Mantener el texto fijo en la pantalla */
-    top: 50%; /* Alineación vertical */
-    left: 50%; /* Alineación horizontal */
-    transform: translate(-50%, -80%); /* Centrar el contenido */
-    text-align: center;
-    z-index: 1; /* Mantener el texto por encima de la imagen */
+.parallax-text {
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
 }
-.parallex-container h2{
-    color:var(--background);
-    white-space: nowrap;
+.parallax-text h2{
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    color: var(--background);
+}
+.parallax-text img{
+    width: 350px;
+    height: auto;
 }
 
 
@@ -214,7 +213,7 @@ p{
 
 .case-study__body{
     display: grid;
-    grid-template-columns: 1fr 4fr; /* Two equal columns */
+    grid-template-columns: 1fr 3fr; 
     gap: 2rem; /* Space between columns */
     margin: 0 auto;
     text-align: left;
@@ -228,11 +227,11 @@ p{
 }
 .case-study__body--content h3{
     color: var(--black);
-    font-size: 1.5rem;
     margin-top: 2rem;
 }
-.case-study__body--summary h3{
-    margin-top: 2rem;
+.case-study__body--summary h4{
+    margin-top: 2.8rem;
+    color: var(--primary);
 }
 
 .case-study__body--content ul {
@@ -252,6 +251,21 @@ p{
     font-weight:400;
 }
 
+.flex{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.text-flex{
+    width: 50%;
+    flex-basis: calc(50% - 2rem);
+}
+.margin-top{
+    margin-top: 1rem;
+}
 
 
 
