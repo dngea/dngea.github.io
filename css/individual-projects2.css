@@ -240,13 +240,12 @@ p{
     margin: 2rem; /* Removes default margin */
 }
 
-.case-study__body--content li {
-    margin-bottom: 1rem; /* Adds space between list items */
-    line-height: 1.5rem;
+.case-study__body--content li{
     font-family: var(--paragraph-font);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--black);
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.75px;
+    line-height: 2rem;
     text-align:left;
     font-weight:400;
 }
