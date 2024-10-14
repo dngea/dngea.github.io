@@ -122,7 +122,6 @@ function initNavEvents() {
 }
 
 
-
 // Llamar a la función para cargar el header y footer cuando la página cargue
 document.addEventListener('DOMContentLoaded', function() {
   loadHeader();

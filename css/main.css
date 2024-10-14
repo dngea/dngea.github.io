@@ -83,7 +83,19 @@ a{
 .italic{
     font-style: italic;
 }
-
+.primary{
+    color: var(--primary);
+    font-weight: 600;
+}
+.date{
+    color: var(--primary);
+    padding: 0 1rem 0 0;
+}
+.location{
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0 1rem;
+}
 
 /* BODY--------------- */
 
@@ -197,6 +209,14 @@ a{
 
 /* ABOUT & CONTACT */
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+
 .contenedor-about{
     max-width: var(--max-width);
     display: flex;
@@ -217,8 +237,8 @@ a{
 .about__img {
     width: 100%; 
     display: flex;
-    justify-content: right;
-    align-items: start; 
+    justify-content: center; /* Mantiene la alineación a la derecha */
+    align-items: start; /* Cambiado a flex-start para alinear la imagen en la parte superior */
     padding: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -226,7 +246,7 @@ a{
 
 .about__img img {
     max-width: 100%; 
-    min-height: 100%; /* Mantén la proporción de la imagen */
+    min-height: 100%; /*Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio inferior que suelen tener los <img> */
     object-fit: cover;
 }
@@ -235,6 +255,15 @@ a{
     padding: 1rem; /* Añade un poco de padding para mejorar la legibilidad */
     width: 100%;
     box-sizing: border-box; /* Asegura que el padding no cause desbordamientos */
+}
+.career{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 .resume{
@@ -318,6 +347,33 @@ button:active {
     background-color: #833015; /* Even darker shade */
 }
 
+.email{
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem 0 0;
+}
+.email:hover{
+    color: #666666;
+}
+
+
+#copyMessage {
+    position: absolute; /* Allows the message to float above the button */
+    top: -25px; /* Adjusts the vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment */
+    color: green;
+    font-weight: bold;
+    font-size: 0.8rem; /* Make the message smaller */
+    background-color: white; /* Optional: background to make it stand out */
+    padding: 5px; /* Optional: padding for better visibility */
+    border-radius: 5px; /* Optional: rounded corners */
+    display: none; /* Start hidden */
+}
+
+#copyMessage.visible {
+    display: block; /* Show the message */
+}
 
 
 footer {
@@ -410,6 +466,36 @@ footer {
    
 }
 
+@media (max-width: 800px) {
+    .contenedor-about{
+        margin-top: 10vh;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna para la disposición vertical */
+        grid-template-rows: auto auto; /* Ajusta las filas automáticamente */
+    }
+
+    .about__img {
+        order: 1; /* Coloca la imagen primero */
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__img img{
+        
+        height: 100%
+    };
+
+    .about__info {
+        order: 2; /* Coloca el texto después de la imagen */
+    }
+    .resume{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 672px) {
     .contenedor{
         width: 80%;
@@ -471,33 +557,7 @@ footer {
         margin:0;
       }
 
-    .contenedor-about{
-        margin-top: 10vh;
-    }
-
-    .about {
-        grid-template-columns: 1fr; /* Cambia a una sola columna para la disposición vertical */
-        grid-template-rows: auto auto; /* Ajusta las filas automáticamente */
-    }
-
-    .about__img {
-        order: 1; /* Coloca la imagen primero */
-        height: 50vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .about__img img{
-        
-        height: 100%
-    };
-
-    .about__info {
-        order: 2; /* Coloca el texto después de la imagen */
-    }
-    .resume{
-        width: 75%;
-        margin: 0 auto;
-    }
+    
 
 
 }
