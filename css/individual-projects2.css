@@ -242,12 +242,12 @@ p{
 
 .case-study__body--content li{
     font-family: var(--paragraph-font);
-    font-size: 1.1rem;
     color: var(--black);
     letter-spacing: 0.75px;
     line-height: 2rem;
     text-align:left;
     font-weight:400;
+    font-size: 1.1rem;
 }
 
 .flex{

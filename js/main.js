@@ -74,7 +74,7 @@ function highlightCurrentPage() {
   const pageMap = {
       'multimedia': 'multimedia-art',
       'ux_ui': 'ux-ui',
-      'photography': 'photography',
+      'frontend': 'frontend',
       'about': 'about'
   };
   
