@@ -87,6 +87,9 @@ a{
     color: var(--primary);
     font-weight: 600;
 }
+.bold{
+    font-weight: 600;
+}
 .date{
     color: var(--primary);
     padding: 0 1rem 0 0;
@@ -211,11 +214,89 @@ a{
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
 }
 .margin-top{
     margin-top: 2rem;
 }
+.inline-group{
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    
+}
+.inline-group .location{
+    margin: 0;
+}
+.inline-group .date{
+    padding: 0;
+    margin: 0;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+.tooltip .tooltiptext {
+visibility: hidden; /* Cambiar a hidden por defecto */
+font-weight: 400;
+width: auto;
+font-size: 0.9rem;
+white-space: nowrap;
+background-color: #383838;
+color: var(--background);
+text-align: center;
+border-radius: 6px;
+padding: 5px;
+position: absolute;
+z-index: 1;
+bottom: 150%;
+left: 30%;
+margin-left: -75px;
+opacity: 0;
+transition: opacity 0.3s, visibility 0s linear 0.3s; /* Retrasar la visibilidad hasta que la opacidad sea 0 */
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #383838 transparent transparent transparent; /* Triángulo */
+}
+
+/* Mostrar el tooltip cuando tenga la clase 'show' */
+.tooltip .tooltiptext.show {
+visibility: visible;
+opacity: 1;
+transition: opacity 0.3s; /* Mostrar con opacidad suave */
+}
+
+/* Estilo para el correo electrónico (como botón) */
+.email {
+cursor: pointer;
+border: none;
+color: var(--black);
+font-size: 16px;
+border-radius: 4px;
+}
+.email:hover{
+    color: #2f2f2f;
+    font-weight: 500;
+}
+.email:active{
+    color: #696969;
+}
+
+
+
+
+
+
 
 .contenedor-about{
     max-width: var(--max-width);
@@ -242,6 +323,8 @@ a{
     padding: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
+    perspective: 1000px; /* Creates a 3D space */
+    
 }
 
 .about__img img {
@@ -249,6 +332,15 @@ a{
     min-height: 100%; /*Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio inferior que suelen tener los <img> */
     object-fit: cover;
+    transition: transform 0.2s ease;
+    will-change: transform; /* Improves performance */    
+    border-radius: 10px;
+    border: var(--background) 2px solid; 
+}
+.about__img img:hover{
+    border: var(--background) 2px solid; 
+    box-shadow: #d6a485 1px 1px 50px;
+
 }
 
 .about__info{
@@ -347,33 +439,7 @@ button:active {
     background-color: #833015; /* Even darker shade */
 }
 
-.email{
-    width: 100%;
-    cursor: pointer;
-    padding: 1rem 0 0;
-}
-.email:hover{
-    color: #666666;
-}
 
-
-#copyMessage {
-    position: absolute; /* Allows the message to float above the button */
-    top: -25px; /* Adjusts the vertical position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center alignment */
-    color: green;
-    font-weight: bold;
-    font-size: 0.8rem; /* Make the message smaller */
-    background-color: white; /* Optional: background to make it stand out */
-    padding: 5px; /* Optional: padding for better visibility */
-    border-radius: 5px; /* Optional: rounded corners */
-    display: none; /* Start hidden */
-}
-
-#copyMessage.visible {
-    display: block; /* Show the message */
-}
 
 
 footer {

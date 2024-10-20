@@ -121,6 +121,40 @@ function initNavEvents() {
   });
 }
 
+// Función para copiar el correo electrónico y mostrar el mensaje "Copied to clipboard!"
+function copyEmail(email) {
+  // Copiar el texto al portapapeles
+  navigator.clipboard.writeText(email).then(function() {
+      const tooltip = document.getElementById("tooltipMessage");
+
+      // Cambiar el texto del tooltip a "email copied"
+      tooltip.innerText = "email copied";
+      tooltip.classList.add("show");
+
+      // Ocultar el mensaje después de 2 segundos
+      setTimeout(function() {
+          tooltip.classList.remove("show");
+
+          // Restablecer el mensaje del tooltip a "copy email"
+          tooltip.innerText = "copy email";
+      }, 2000);
+  }).catch(function(error) {
+      console.error("Error copying email to clipboard: ", error);
+  });
+}
+
+// Función para mostrar el tooltip al pasar el mouse
+function showTooltip() {
+  const tooltip = document.getElementById("tooltipMessage");
+  tooltip.innerText = "copy email"; // Mostrar el mensaje "copy email"
+  tooltip.classList.add("show");
+}
+
+// Función para ocultar el tooltip al quitar el mouse
+function hideTooltip() {
+  const tooltip = document.getElementById("tooltipMessage");
+  tooltip.classList.remove("show");
+}
 
 // Llamar a la función para cargar el header y footer cuando la página cargue
 document.addEventListener('DOMContentLoaded', function() {
