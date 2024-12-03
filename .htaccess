@@ -5,7 +5,10 @@ RewriteEngine On
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# Servir archivos .html para URLs limpias
+# Excluir carpetas específicas de la reescritura
+RewriteCond %{REQUEST_URI} !^/components/ [NC]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
+
+# Servir archivos .html para URLs limpias
 RewriteRule ^([^/]+)/?$ $1.html [L]
