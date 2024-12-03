@@ -1,16 +1,14 @@
 # Habilitar mod_rewrite
 RewriteEngine On
 
-# Excluir la carpeta '/components' de la reescritura
+# Excluir la carpeta 'components' de las reescrituras
 RewriteCond %{REQUEST_URI} !^/components/ [NC]
 
 # Redirigir URLs con .html a URLs limpias (SEO-friendly)
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# Excluir carpetas y archivos reales de la reescritura
+# Servir archivos .html para URLs limpias
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-
-# Servir archivos .html para URLs limpias
 RewriteRule ^([^/]+)/?$ $1.html [L]
