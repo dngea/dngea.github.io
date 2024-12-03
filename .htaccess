@@ -4,14 +4,21 @@ RewriteEngine On
 # Excluir la carpeta 'components' de las reescrituras
 RewriteCond %{REQUEST_URI} !^/components/ [NC]
 
-# Excluir cualquier subcarpeta que contenga más de un segmento de ruta
-RewriteCond %{REQUEST_URI} !^/[^/]+/ [NC]
-
 # Redirigir URLs con .html a URLs limpias (SEO-friendly)
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
 RewriteRule ^ /%1 [R=301,L]
+
+# Excluir cualquier subcarpeta que contenga más de un segmento de ruta
+RewriteCond %{REQUEST_URI} !^/[^/]+/ [NC]
 
 # Servir archivos .html para URLs limpias, excluyendo subcarpetas
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Excluir subcarpetas de la reescritura
+RewriteCond %{REQUEST_URI} ^/([^/]+)/[^/]+/?$ [NC]
+
+# Redirigir URLs limpias dentro de subcarpetas a archivos .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/([^/]+)/?$ $1/$2.html [L]
