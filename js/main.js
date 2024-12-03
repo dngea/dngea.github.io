@@ -32,7 +32,7 @@ function openNav() {
 // Función para cargar el header
 function loadHeader() {
   console.log("loadHeader function called"); // Verificar si se llama la función
-  fetch("../components/header.html")
+  fetch("/components/header.html")
       .then(response => {
           if (!response.ok) {
               throw new Error('Network response was not ok');
@@ -53,7 +53,7 @@ function loadHeader() {
 // Función para cargar el footer
 function loadFooter() {
   console.log("loadFooter function called"); // Verificar si se llama la función
-  fetch("../components/footer.html")
+  fetch("/components/footer.html")
       .then(response => {
           if (!response.ok) {
               throw new Error('Network response was not ok');
