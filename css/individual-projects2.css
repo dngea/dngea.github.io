@@ -1,3 +1,5 @@
+
+
 html, body{
     position:relative;
     z-index: 3;
@@ -145,19 +147,41 @@ p{
 
 
 
+.page-ux{
+    --parallax-bg-image: url('/img/home/design-thinking-bg.jpg');
+}
+.page-multimedia{
+    --parallax-bg-image: url('/img/multimedia/methodology.jpg');
+}
+.page-frontend{
+    --parallax-bg-image: url('/img/headerldn.jpg');
+}
 
 
 
 /* Style for the parallax section */
+
 .parallax {
-    min-height: 500px;
+    position: relative;
+    min-height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--parallax-bg-image); /* Usa la variable */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    filter: brightness(0.75) blur(3px);
+    z-index: 0;
 }
 .parallax-text {
     color: white;
@@ -172,6 +196,9 @@ p{
     background-color: var(--primary);
     padding: 1rem 2rem;
     color: var(--background);
+}
+.parallax-text h3{
+    color: var(--primary);
 }
 .parallax-text img{
     width: 350px;

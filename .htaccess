@@ -1,0 +1,11 @@
+# Habilitar mod_rewrite
+RewriteEngine On
+
+# Redirigir URLs con .html a URLs limpias (SEO-friendly)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Servir archivos .html para URLs limpias
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/?$ $1.html [L]
