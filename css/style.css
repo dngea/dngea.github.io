@@ -19,6 +19,7 @@ html{
   width: auto;
   font-size: 10px;
   font-family: var(--paragraph-font); 
+  overflow-x: hidden;
 }
 
 body {
@@ -89,8 +90,6 @@ h3{
   padding: 1rem;
   
 }
-
-
 
 p {
   line-height: 1.5em;
@@ -171,11 +170,11 @@ footer button:hover{
 
 .light {
   position: absolute;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
   border-radius: 50%;
   pointer-events: none; /* Permite que el cursor interactúe con otros elementos */
-  background: radial-gradient(circle, rgba(41, 29, 19, 0.35), rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle, rgba(104, 59, 22, 0.3), rgba(41, 29, 19, 0.1) 60%, rgba(255, 255, 255, 0) 90%);
   transform: translate(-50%, -50%);
   mix-blend-mode: screen; /* Permite un efecto de fusión con el fondo */
 }
