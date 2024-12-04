@@ -8,14 +8,14 @@ function openNav() {
     document.getElementById("overlay_nav").style.visibility = "hidden";
   }
 
-  const light = document.querySelector('.light');
+  // const light = document.querySelector('.light');
 
-  document.addEventListener('mousemove', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    light.style.left = `${x}px`;
-    light.style.top = `${y}px`;
-  });
+  // document.addEventListener('mousemove', (e) => {
+  //   const x = e.clientX;
+  //   const y = e.clientY;
+  //   light.style.left = `${x}px`;
+  //   light.style.top = `${y}px`;
+  // });
 
 
 // Función para cargar el header
