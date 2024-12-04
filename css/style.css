@@ -18,7 +18,15 @@
 html{
   width: auto;
   font-size: 10px;
-  font-family: var(--paragraph-font);
+  font-family: var(--paragraph-font); 
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--black); */
+  box-sizing: border-box;
 
   background: 
     radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
@@ -28,14 +36,6 @@ html{
     repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
     radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
   background-attachment: fixed;
-}
-
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  /* background-color: var(--black); */
-  box-sizing: border-box;
 }
 
 .body__container{
