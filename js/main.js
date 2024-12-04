@@ -8,7 +8,14 @@ function openNav() {
     document.getElementById("overlay_nav").style.visibility = "hidden";
   }
 
+  const light = document.querySelector('.light');
 
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    light.style.left = `${x}px`;
+    light.style.top = `${y}px`;
+  });
 
 
   // gsap.utils.toArray(".slideText").forEach(text => {
@@ -155,6 +162,8 @@ function hideTooltip() {
   const tooltip = document.getElementById("tooltipMessage");
   tooltip.classList.remove("show");
 }
+
+
 
 // Llamar a la función para cargar el header y footer cuando la página cargue
 document.addEventListener('DOMContentLoaded', function() {

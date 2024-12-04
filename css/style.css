@@ -13,13 +13,26 @@ html{
   width: auto;
   font-size: 10px;
   font-family: var(--paragraph-font);
+  --s: 50px;
+  --c: #141414;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%,#1f2022 68% 70%,#0000 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
 }
 
 body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   box-sizing: border-box;
 }
 
@@ -115,7 +128,7 @@ footer {
   padding: 2.5rem;
   width: auto;
   width: 100%;
-  background-color: var(--black);
+  /* background-color: var(--black); */
 }
 
 footer .socialmedia{
@@ -153,6 +166,17 @@ footer button:hover{
 }
 
 
+
+.light {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  pointer-events: none; /* Permite que el cursor interactúe con otros elementos */
+  background: radial-gradient(circle, rgba(41, 29, 19, 0.35), rgba(255, 255, 255, 0) 80%);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen; /* Permite un efecto de fusión con el fondo */
+}
 
 /* CARDS ------------- */
 
