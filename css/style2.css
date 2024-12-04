@@ -8,11 +8,11 @@
   --main-font: 'IBM Plex sans', system-ui;
   --paragraph-font: 'Work Sans', system-ui;
 
-  /* --s: 50px;
+  --s: 50px;
   --c: #141414;
   --_s: calc(2*var(--s)) calc(2*var(--s));
   --_g: 35.36% 35.36% at;
-  --_c: #0000 66%,#1f2022 68% 70%,#0000 72%; */
+  --_c: #0000 66%,#1f2022 68% 70%,#0000 72%;
 }
 
 html{
@@ -25,17 +25,17 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   box-sizing: border-box;
 
-  /* background:  
+  background:  
     radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
     radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
     radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
     radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
     repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
     radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .body__container{
