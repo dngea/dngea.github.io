@@ -50,7 +50,7 @@ body {
 /* TITLE ------------ */
 
 h1{
-  font-size: 55rem;
+  font-size: 5rem;
   font-weight: bold;
   font-family: var(--main-font);
   color: var(--background);
