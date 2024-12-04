@@ -8,11 +8,11 @@
   --main-font: 'IBM Plex sans', system-ui;
   --paragraph-font: 'Work Sans', system-ui;
 
-  /* --s: 50px;
+  --s: 50px;
   --c: #141414;
-  --_s: calc(2*50px) calc(2*50px);
+  --_s: calc(2*var(--s)) calc(2*var(--s));
   --_g: 35.36% 35.36% at;
-  --_c: #0000 66%,#1f2022 68% 70%,#0000 72%; */
+  --_c: #0000 66%,#1f2022 68% 70%,#0000 72%;
 }
 
 html{
@@ -29,12 +29,12 @@ body {
   box-sizing: border-box;
 
   background:  
-    radial-gradient(var(--_g) 100% 25%,#0000 66%,#1f2022 68% 70%,#0000 72%) 50px 50px/calc(2*50px) calc(2*50px), 
-    radial-gradient(var(--_g) 0 75%,#0000 66%,#1f2022 68% 70%,#0000 72%) 50px 50px/calc(2*50px) calc(2*50px), 
-    radial-gradient(var(--_g) 100% 25%,#0000 66%,#1f2022 68% 70%,#0000 72%) 0 0/calc(2*50px) calc(2*50px), 
-    radial-gradient(var(--_g) 0 75%,#0000 66%,#1f2022 68% 70%,#0000 72%) 0 0/calc(2*50px) calc(2*50px), 
-    repeating-conic-gradient(#141414 0 25%,#0000 0 50%) 0 0/calc(2*50px) calc(2*50px), 
-    radial-gradient(#0000 66%,#1f2022 68% 70%,#0000 72%) 0 calc(50px/2)/50px 50px #141414;
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
   background-attachment: fixed;
 }
 
@@ -50,7 +50,7 @@ body {
 /* TITLE ------------ */
 
 h1{
-  font-size: 60rem;
+  font-size: 5rem;
   font-weight: bold;
   font-family: var(--main-font);
   color: var(--background);
